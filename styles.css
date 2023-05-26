@@ -15,7 +15,7 @@ p {
     font-family: 'Rajdhani', sans-serif;
 }
 
-.header {
+header {
     border: #BF3612;
     border-width: 2px;
     border-radius: 20%, 20%, 0%, 0%;
@@ -26,4 +26,8 @@ p {
 
 
 
+}
+
+.logo {
+    max-width: 20%;
 }
