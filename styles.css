@@ -81,6 +81,3 @@ header#main nav ul li a#home::before {
     background-image: url("../img/home-icon.png");
 }
 
-header#main nav ul li a#games::before {
-    background-image: url("../img/games-icon.png");
-}
