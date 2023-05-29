@@ -21,7 +21,7 @@ header {
     border-width: 10px;
     background-color: #BF3612;
     background-image: url("/Images/8bit.jpg");
-    height: 200px;
+    height: 300px;
     max-width: 100%;
     border-radius: 20%, 20%, 0%, 0%;
 }
