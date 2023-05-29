@@ -18,7 +18,7 @@ p {
 header {
     margin: 0 auto;
     border: #BF3612;
-    border-width: 2px;
+    border-width: 10px;
     background-color: #BF3612;
     background-image: url("/Images/8bit.jpg");
     height: 200px;
