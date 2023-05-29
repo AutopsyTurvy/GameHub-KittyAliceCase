@@ -33,7 +33,7 @@ p {
     width: 0;
     height: 0;
     border-right: 100vw solid transparent;
-    border-bottom: 13.9vw solid red;
+    border-bottom: 13.9vw solid #BF3612;
     margin-top: -13.9vw;
 }
 
