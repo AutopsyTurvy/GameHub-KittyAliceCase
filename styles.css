@@ -1,7 +1,6 @@
 body { 
     display: block;
     background-color: black;
-    border-radius: 20;
 
 }
 
@@ -34,7 +33,7 @@ header {
 .headerseparator {
 
     position: relative;
-    width: 90%;
+    width: 0%;
     height: 0;
     border-left: 100vw solid transparent;
     border-bottom: 13.9vw solid #BF3612;
@@ -44,4 +43,5 @@ header {
 .navbar {
 
     background-color: #BF3612;
+    height: 30%;
 }
