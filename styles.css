@@ -33,7 +33,7 @@ header {
 }
 .navbar {
     text-align: right;
-    flex: auto;
+    display: flex;
 }
 
 
