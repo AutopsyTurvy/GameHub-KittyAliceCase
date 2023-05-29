@@ -23,20 +23,19 @@ header {
     background-image: url("/Images/8bit.jpg");
     height: 200px;
     max-width: 80%;
+}
 
-
-
+.logo {
+    z-index: 10;
+    max-width: 20%;
 }
 
 .headerseparator {
 
+    position: relative;
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
     border-bottom: 13.9vw solid #BF3612;
     margin-top: -13.9vw;
-}
-
-.logo {
-    max-width: 20%;
 }
