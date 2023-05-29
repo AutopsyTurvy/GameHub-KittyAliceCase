@@ -31,6 +31,7 @@ p {
 .headerseparator {
 
     width: 0;
+    max-width: fit-content;
     height: 0;
     border-right: 100vw solid transparent;
     border-bottom: 13.9vw solid red;
