@@ -22,11 +22,12 @@ header {
     background-color: #BF3612;
     background-image: url("/Images/8bit.jpg");
     height: 200px;
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 20%, 20%, 0%, 0%;
 }
 
 .logo {
+    position: relative;
     z-index: 10;
     max-width: 20%;
 }
