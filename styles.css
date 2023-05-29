@@ -1,3 +1,7 @@
+html {
+    margin: 0 auto;
+}
+
 body { 
     margin: 0 auto;
     background-color: black;
@@ -17,6 +21,7 @@ p {
 
 header {
     background-color: #1E303E;
-    
+    max-width: ;
+
 
 }
