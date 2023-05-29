@@ -44,4 +44,8 @@ header {
 
     background-color: #BF3612;
     height: 30%;
+    border-left: 100vw solid transparent;
+    border-bottom: 13.9vw solid #BF3612;
+    margin-top: -13.9vw;
+
 }
