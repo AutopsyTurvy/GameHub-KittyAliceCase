@@ -34,7 +34,6 @@ header {
 
 .headerseparator {
 
-    position: relative;
     width: 0%;
     height: 0;
     border-left: 100vw solid transparent;
