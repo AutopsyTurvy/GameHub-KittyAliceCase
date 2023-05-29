@@ -31,10 +31,10 @@ p {
 .headerseparator {
 
     width: 0;
-    max-width: 80%;
     height: 0;
     border-right: 100vw solid transparent;
     border-bottom: 13.9vw solid red;
+    margin-top: -13.9vw;
 }
 
 .logo {
