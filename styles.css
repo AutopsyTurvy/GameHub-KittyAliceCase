@@ -27,7 +27,6 @@ header {
 }
 
 .logo {
-    padding: 20px;
     position: relative;
     z-index: 10;
     max-width: 20%;
