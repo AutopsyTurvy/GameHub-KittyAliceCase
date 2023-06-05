@@ -41,7 +41,7 @@ header#main a#logo {
     display: block;
     color: transparent;
     left: 1em;
-    z-index: 2;
+    z-index: 3;
 }
 
 header#main nav {
@@ -77,7 +77,4 @@ header#main nav  ul li a::before {
     margin-bottom: 8px;
 }
 
-header#main nav ul li a#home::before {
-    background-image: url("../img/home-icon.png");
-}
 
