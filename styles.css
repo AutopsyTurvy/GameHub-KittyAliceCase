@@ -74,6 +74,12 @@ header#main nav  ul li a {
     font-size: 0.8em;
 }
 
+header#main nav ul li a#homebutton:hover {
+    color: blue;
+    background-color: blue;
+
+}
+
 
 header#main nav  ul li a::before {
     content: '';
@@ -87,11 +93,4 @@ header#main nav  ul li a::before {
     margin-bottom: 8px;
 }
 
-headrer#main nav ul li a#homebutton:hover {
-    color: blue;
-    background-color: blue;
 
-
-
-
-}
