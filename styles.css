@@ -78,8 +78,7 @@ header#main nav  ul li a {
 header#main nav ul li a#homebutton, #gamesbutton, #aboutbutton, #contactbutton:hover {
 
     border: 1px solid rgb(white);
-    padding: 4px;
-    font-size: 2em;
+    padding: 5px;
     border-radius: 4px;
 
 }
