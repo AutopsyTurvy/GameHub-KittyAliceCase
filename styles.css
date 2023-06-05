@@ -9,6 +9,13 @@ body {
     
 }
 
+.home-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    border: 2px solid rgb(222,66,26);
+}
+
 header#main {
     background-image: url(./Images/8bit.jpg);
     background-color: rgb(30,48,62);
