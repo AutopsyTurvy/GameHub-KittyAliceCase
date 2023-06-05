@@ -77,7 +77,10 @@ header#main nav  ul li a {
 header#main nav ul li a#homebutton:hover {
     color: transparent;
     background-color: transparent;
-    border: 2px solid white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 4px;
+
 
 }
 
