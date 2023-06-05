@@ -71,7 +71,8 @@ header#main nav  ul li a {
     position: relative;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 0.8em;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 
 header#main nav ul li a#homebutton:hover {
