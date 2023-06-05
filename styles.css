@@ -23,6 +23,7 @@ body {
 header#main {
     background-image: url(./Images/8bit.jpg);
     background-color: rgb(30,48,62);
+    border-radius: 20px;
     width: 100%;
     height: 120px;
     position: relative;
