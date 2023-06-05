@@ -75,7 +75,7 @@ header#main nav  ul li a {
     text-transform: uppercase;
 }
 
-header#main nav ul li a#homebutton:hover {
+header#main nav ul li a#homebutton #gamesbutton #aboutbutton #contactbutton:hover {
 
     border: 1px solid white;
     padding: 4px;
