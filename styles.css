@@ -76,7 +76,8 @@ header#main nav  ul li a {
 
 header#main nav ul li a#homebutton:hover {
     color: blue;
-    background-color: blue;
+    background-color: transparent;
+    border: 2px solid white;
 
 }
 
