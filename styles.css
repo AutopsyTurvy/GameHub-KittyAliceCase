@@ -34,7 +34,7 @@ header#main::after {
     border-top: 2px solid rgb(0,0,0);
     position: absolute;
     top: 60px;
-    transform: rotate(-1.5deg);
+    transform: rotate(-2deg);
     z-index: 1;
 }
 
