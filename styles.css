@@ -63,7 +63,6 @@ header#main nav  ul li a {
     position: relative;
     text-decoration: none;
     color: rgb(255,255,255);
-    text-transform: uppercase;
     font-size: 0.8em;
 }
 
