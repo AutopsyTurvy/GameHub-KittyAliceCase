@@ -75,10 +75,10 @@ header#main nav  ul li a {
 }
 
 header#main nav ul li a#homebutton:hover {
-    color: transparent;
+
     border: 1px solid white;
-    border-radius: 4px;
     padding: 4px;
+    border-radius: 4px;
 
 }
 
