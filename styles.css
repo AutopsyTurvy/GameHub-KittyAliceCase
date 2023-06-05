@@ -70,7 +70,7 @@ header#main nav ul li {
 header#main nav  ul li a {
     position: relative;
     text-decoration: none;
-    color: blue;
+    color: rgb(255, 255, 255);
     font-size: 0.8em;
 }
 
@@ -87,7 +87,7 @@ header#main nav  ul li a::before {
     margin-bottom: 8px;
 }
 
-headrer#main nav ul li a:hover {
+headrer#main nav ul li a#homebutton:hover {
     color: blue;
 
 
