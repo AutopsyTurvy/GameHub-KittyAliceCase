@@ -73,6 +73,7 @@ header#main nav  ul li a {
     font-size: 0.8em;
 }
 
+
 header#main nav  ul li a::before {
     content: '';
     background-size: contain;
@@ -85,4 +86,11 @@ header#main nav  ul li a::before {
     margin-bottom: 8px;
 }
 
+.homebutton:hover {
 
+    color: blue;
+
+
+
+
+}
