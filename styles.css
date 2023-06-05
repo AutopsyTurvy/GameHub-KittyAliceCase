@@ -88,6 +88,7 @@ header#main nav  ul li a::before {
 }
 
 headrer#main nav ul li a#homebutton:hover {
+    color: blue;
     background-color: blue;
 
 
