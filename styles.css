@@ -5,7 +5,7 @@ html {
 
 body {
     
-    padding: 0;
+    padding: 40px;
     margin: 0;
     background-image: url(./Images/galaxy.jpg);
     background-repeat: no-repeat;
@@ -26,7 +26,8 @@ body {
 header#main {
     background-image: url(./Images/8bit.jpg);
     background-color: rgb(30,48,62);
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     height: 120px;
     position: relative;
     overflow: hidden;
@@ -106,22 +107,97 @@ header#main nav  ul li a::before {
 /* drifting images under header*/
 
 .drifting-images {
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  
+.background-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
     background-image: url(/Images/controller72dpi.jpg);
-    height: 240px;
-
-}
-
+    background-size: cover;
+    filter: blur(5px);
+    opacity: 0.8;
+  }
+  
 .drifting-images-text {
     color: white;
-    padding-left: 15px;
+    padding-left: 20px;
+    margin: 15px;
+  }
+  
+.popularimages {
+    border-radius: 20px;
+    border: 2px solid rgb(222, 66, 26);
+    height: 100px;
+    max-width: 30%;
+    min-width: 100px;
+  }
+  
+.special-offer-box {
+    border: 2px solid rgb(222, 66, 26);
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    color: white;
+    background-color: rgba(222, 66, 26, 0.3);
+    margin: 20px;
+    padding: 15px;
+  }
+  
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  /* main body */
+
+h1 {
+    color: white;
+    text-align: center;
+  }
+
+.mainbodygamename {
+
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
 }
 
-.special-offer-box {
-    
-    
-    height: 20px;
-    width: 90%;
+
+.main-body-container .centergame {
+
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
-    color: white;
-    
+    max-width: 70%;
+
 }
+
+/* footer section */
+
+#footer {
+
+    background-color: rgb(222, 66, 26);
+    height: 30px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+  
+
