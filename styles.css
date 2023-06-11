@@ -15,8 +15,16 @@ body {
 
 h1, h2, h3, h4, h5 {
     
-    font-family: "consolas", sans-serif;
+    font-family: "Orbitron", Arial, sans-serif;
+    font-weight: 500;
 }
+
+p {
+    font-family: "Play", Arial, sans-serif;
+    color: white;
+    padding: 20px;
+}
+
 
 /*Header Section*/
 
@@ -89,7 +97,7 @@ header#main .headerbottom  ul li a::before {
 
 /* navigation bar */
 
-#navigation {
+.navigation {
     height: 100px;
     background-color: white;
     color: white;
@@ -296,6 +304,35 @@ h1 {
 #footer .baselogo {
     max-width: 60px;
     margin: 5px;
+}
+
+/* Game Info Page */
+
+.pegi-agerating-infopage {
+    display: inline;
+    max-width: 40px;
+}
+
+.pricebox {
+
+    color: white;
+    background-color: rgb(222, 66, 26);
+    padding: 10px;
+    display: inline;
+}
+
+.singleplayer { 
+    color: white;
+    background-color: rgb(222, 66, 26);
+    padding: 10px;
+    display: inline;
+    margin: 5px;
+
+}
+
+.singleplayericon {
+    max-width: 20px;
+    
 }
   
 
