@@ -294,7 +294,6 @@ h1 {
 /* footer section */
 
 #footer {
-
     background-color: rgb(222, 66, 26);
     height: 50px;
     border-bottom-left-radius: 16px;
@@ -308,13 +307,21 @@ h1 {
     margin: 5px;
 }
 
-.footer-envelope, .facebooklogo, .twitterlogo {
+.footer-links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-envelope {
+    max-height: 30px;
+}
+
+.facebooklogo, .twitterlogo {
     max-height: 35px;
     
 }
+
 
 /* Game Info Page */
 
