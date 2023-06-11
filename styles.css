@@ -34,6 +34,7 @@ p {
     margin: 0 auto;
     justify-content: center;
     border: 2px solid rgb(222,66,26);
+    background-color: black;
     
 }
 
@@ -190,6 +191,7 @@ header#navigation ul li a#homebutton:hover {
     color: white;
     padding-left: 20px;
     margin: 15px;
+
   }
   
 .popularimages {
@@ -272,7 +274,7 @@ h1 {
   margin: 0 auto;
   border: 2px solid rgb(222, 66, 26);
   border-radius: 20px;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 
@@ -304,6 +306,14 @@ h1 {
 #footer .baselogo {
     max-width: 60px;
     margin: 5px;
+}
+
+.footer-envelope, .facebooklogo, .twitterlogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-height: 35px;
+    
 }
 
 /* Game Info Page */
