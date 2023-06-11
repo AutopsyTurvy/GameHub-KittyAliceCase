@@ -10,6 +10,12 @@ body {
     background-image: url(./Images/galaxy.jpg);
     background-repeat: no-repeat;
     
+    
+}
+
+h1, h2, h3, h4, h5 {
+    
+    font-family: "consolas", sans-serif;
 }
 
 /*Header Section*/
@@ -42,7 +48,7 @@ header#main::after {
     position: absolute;
     top: 60px;
     transform: rotate(-2deg);
-    z-index: 1;
+    z-index: 2;
 }
 
 header#main a#logo {
@@ -58,41 +64,18 @@ header#main a#logo {
     display: block;
     color: transparent;
     left: 1em;
-    z-index: 3;
+    z-index: 20;
 }
 
-header#main nav {
+header#main .headerbottom {
     position: absolute;
     right: 1em;
     bottom: 0em;
-    z-index: 2;
-}
-
-header#main nav ul li {
-    list-style: none;
-    display: inline-block;
-    padding-right: 12px;
-    padding-bottom: 0px;
-}
-
-header#main nav  ul li a {
-    position: relative;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    text-transform: uppercase;
-}
-
-header#main nav ul li a#homebutton:hover {
-    
-    border: 1px solid rgb(white);
-    background-color: transparent;
-    border-radius: 4px;
-
+    z-index: 3;
 }
 
 
-header#main nav  ul li a::before {
+header#main .headerbottom  ul li a::before {
     content: '';
     background-size: contain;
     background-repeat: no-repeat;
@@ -104,12 +87,82 @@ header#main nav  ul li a::before {
     margin-bottom: 8px;
 }
 
+/* navigation bar */
+
+#navigation {
+    height: 100px;
+    background-color: white;
+    color: white;
+}
+
+header#navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 12px;
+    padding-bottom: 0px;
+
+}
+
+
+header#navigation ul li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+
+header#navigation ul li a#homebutton:hover {
+    
+    border: 1px solid rgb(white);
+    background-color: transparent;
+    border-radius: 4px;
+
+}
+/* Dropdown menu*/
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+}
+
+.dropdown-hover {
+    display: inline-block;
+    padding: 10px;
+    background: rgb(30,48,62);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.dropdown-hover:hover{
+    background: #1b203d;
+}
+
+.dropdown-menu {
+    position: absolute;
+    min-width: 200px;
+    background: white;
+    color: #1b203d;
+    
+}
+
+.dropdown-hover .dropdown-menu {
+    display: block;
+
+}
+
 /* drifting images under header*/
 
 .drifting-images {
     position: relative;
     margin: 0 auto;
     padding: 5px;
+    z-index: 1;
   }
   
 .background-image {
@@ -137,6 +190,7 @@ header#main nav  ul li a::before {
     height: 100px;
     max-width: 30%;
     min-width: 100px;
+    flex-wrap: wrap;
   }
   
 .special-offer-box {
@@ -159,7 +213,7 @@ header#main nav  ul li a::before {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 8px;
   }
 
   /* main body */
@@ -175,29 +229,73 @@ h1 {
     text-align: center;
     font-weight: 600;
     letter-spacing: 1.5px;
+    font-size: larger;
 
 }
 
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+}
 
-.main-body-container .centergame {
+.left-arrow {
+  left: 30px;
+  border-right: 35px solid rgb(222, 66, 26);
+}
 
-    display: block;
-    margin: 0 auto;
+.right-arrow {
+  right: 30px;
+  border-left: 35px solid rgb(222, 66, 26);
+}
+
+.arrow-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.centergame {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid rgb(222, 66, 26);
+  border-radius: 20px;
+  max-width: 70%;
+}
+
+
+
+
+.best-seller-box {
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
-    max-width: 70%;
-
-}
+    margin: 0 auto;
+    max-width: 90%;
+    color: white;
+    background-color: rgba(222, 66, 26, 0.3);
+    margin: 20px;
+    padding: 15px;
+  }
 
 /* footer section */
 
 #footer {
 
     background-color: rgb(222, 66, 26);
-    height: 30px;
+    height: 50px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+    margin-top: 40px;
+    position: relative;
+}
 
+#footer .baselogo {
+    max-width: 60px;
+    margin: 5px;
 }
   
 

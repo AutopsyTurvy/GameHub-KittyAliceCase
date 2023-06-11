@@ -9,9 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
+
 <link href="styles.css" rel="stylesheet"> 
 <title> GameHub - Home </title>
 
@@ -21,8 +31,11 @@
         <header id="main">
             <a id="logo" alt="Game Hub" href="#">Home</a>
 
-            <nav>
-                <ul>
+            <section class="headerbottom">
+             
+            </section> 
+            <nav id="navigation">
+                 <ul>
                     <li>
                         <a id="homebutton" href="#">Home</a>
                     </li>
@@ -34,9 +47,23 @@
                     </li>
                     <li>
                         <a id="contactbutton" href="#">Contact</a>
-                    </li>
+                    </li> 
+                    
+                    
+                    <div class="dropdown">
+                    <button class="dropdown-hover">Dropdown</button>
+                    <div class="dropdown-menu">
+                        <a id="contactbutton" href="#">dropdown 1</a>
+                        <a id="contactbutton" href="#">dropdown 2</a>
+                        <a id="contactbutton" href="#">dropdown 3</a>
+                        <a id="contactbutton" href="#">dropdown 4</a>
+                    </div>
+                    </div>
                 </ul>
-            </nav>  
+
+            </nav>
+            
+ 
         </header>
 
         <section class="drifting-images">
@@ -48,39 +75,68 @@
               <div class="title-container">
                 <h2>Popular right now:</h2>
                 <div class="image-container">
+                <a href="gameinfo.html">
                   <img class="popularimages" src="/Images/circuit-breaker-escape.png" alt="Circuit breaker escape game poster link, on offer.">
+                </a>
+                <a>
                   <img class="popularimages" src="/Images/maze-escape.png" alt="Maze escape Game poster link, on offer.">
+                </a>
+                <a>
                   <img class="popularimages" src="/Images/down-darkest-alleys.png" alt="Down Darkest Alleys Game poster link, on offer.">
+                </a>
+                <a>
+                  <img class="popularimages" src="/Images/hauntedhouse.jpg" alt="Haunted House Game poster link, on offer.">
+                </a>
+
                 </div>
               </div>
             </div>
           </section>
 
+
+
+
             <main class="main-body-container">
                 <h1>Browse Our Games:</h1>
                 <p class="mainbodygamename">Beneath the Titans</p>
 
-
-
-
+                <div class="arrow-container">
                 <div class="left-arrow"></div>
                 
                 <img class="centergame" src="/Images/beneaththetitans.png" alt="Beneath the Titans Game poster- click for more info.">
 
                 <div class="right-arrow"></div>
+            </div>
+
+
+           
+                <div class="best-seller-box">
+                  <div class="title-container">
+                    <h2>Our Best Sellers:</h2>
+                    <div class="image-container">
+                      <img class="popularimages" src="/Images/pufffriends.jpg" alt="Puff Friends game poster link, our best sellers.">
+                      <img class="popularimages" src="/Images/dragonsden.png" alt="Maze escape Game poster link, our best sellers.">
+                      <img class="popularimages" src="/Images/animalvillage.png" alt="Down Darkest Alleys Game poster link, our best sellers.">
+                      <img class="popularimages" src="/Images/snailmail.png" alt="Haunted House Game poster link, our best sellers.">
+                      
+    
+                    </div>
+                  </div>
+                </div>
+              </section>
 
 
               </main>
 
+
+
+              
+
               <footer id="footer">
+                <img class="baselogo" src="/Images/GameHub_Logo.png" alt="">
 
               </footer>
 
-           
-            </section>
-          
-       
-          </section>
 
             </div>
 
