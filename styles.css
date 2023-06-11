@@ -199,17 +199,6 @@ header#navigation ul li a#homebutton:hover {
     .drifting-images-text {
         color: white;
         padding-left: 15px;
-        font-size: 20px;
-        margin: 15px;
-    
-      }
-
-  }
-
-  @media screen and (max-width: 470px) {
-    .drifting-images-text {
-        color: white;
-        padding-left: 15px;
         font-size: 15px;
         margin: 15px;
     
@@ -217,7 +206,7 @@ header#navigation ul li a#homebutton:hover {
 
   }
 
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 480px) {
     .drifting-images-text {
         color: white;
         padding-left: 15px;
@@ -227,6 +216,9 @@ header#navigation ul li a#homebutton:hover {
       }
 
   }
+
+
+
   
 .popularimages {
     border-radius: 20px;
