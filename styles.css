@@ -9,6 +9,7 @@ body {
     margin: 0;
     background-image: url(./Images/galaxy.jpg);
     background-repeat: no-repeat;
+    min-width: 400px;
     
     
 }
@@ -193,12 +194,45 @@ header#navigation ul li a#homebutton:hover {
     margin: 15px;
 
   }
+
+  @media screen and (max-width: 500px) {
+    .drifting-images-text {
+        color: white;
+        padding-left: 15px;
+        font-size: 20px;
+        margin: 15px;
+    
+      }
+
+  }
+
+  @media screen and (max-width: 470px) {
+    .drifting-images-text {
+        color: white;
+        padding-left: 15px;
+        font-size: 15px;
+        margin: 15px;
+    
+      }
+
+  }
+
+  @media screen and (max-width: 460px) {
+    .drifting-images-text {
+        color: white;
+        padding-left: 15px;
+        font-size: 10px;
+        margin: 15px;
+    
+      }
+
+  }
   
 .popularimages {
     border-radius: 20px;
     border: 2px solid rgb(222, 66, 26);
     height: 100px;
-    max-width: 30%;
+    max-width: 40%;
     min-width: 100px;
     flex-wrap: wrap;
   }
@@ -218,6 +252,26 @@ header#navigation ul li a#homebutton:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .popularimages {
+        border-radius: 20px;
+        border: 2px solid rgb(222, 66, 26);
+        height: 100px;
+        max-width: 30%;
+        min-width: 100px;
+        flex-wrap: wrap;
+      }
+    
+    .title-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+      }
+
   }
   
 .image-container {
@@ -291,6 +345,17 @@ h1 {
     padding: 15px;
   }
 
+  @media screen and (max-width: 600px) {
+    
+    .best-seller-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+      }
+
+  }
+
 /* footer section */
 
 #footer {
@@ -299,30 +364,173 @@ h1 {
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     margin-top: 40px;
-    position: relative;
-}
-
-#footer .baselogo {
+  }
+  
+  #footer .baselogo {
     max-width: 60px;
-    margin: 5px;
-}
-
-.footer-links {
+    padding: 10px;
+    margin-right: auto;
+  }
+  
+  #footer .footer-links {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-}
-
-.footer-envelope {
+    height: 100%;
+    font-size: 15px;
+  }
+  
+  .footer-envelope {
     max-height: 30px;
-}
-
-.facebooklogo, .twitterlogo {
+  }
+  
+  .facebooklogo,
+  .twitterlogo {
     max-height: 35px;
+  }
+  
+
+
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 720px) {
+    #footer .baselogo {
+      max-width: 50px; 
+    }
+
+    #footer .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        font-size: 12px;
+      }
     
-}
+    .footer-envelope {
+      max-height: 25px; 
+    }
+
+    .footer-links p {
+        font-size: 10;
+        
+    }
+    
+    .facebooklogo,
+    .twitterlogo {
+      max-height: 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #footer .baselogo {
+      max-width: 40px; 
+    }
+
+    #footer .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        font-size: 8px;
+      }
+    
+    .footer-envelope {
+      max-height: 15px; 
+    }
+
+    .footer-links, p {
+        font-size: 8;
+        
+    }
+    
+    .facebooklogo,
+    .twitterlogo {
+      max-height: 20px;
+      flex-wrap: wrap;
+    }
+  }
 
 
+
+  @media screen and (max-width: 500px) {
+    #footer .baselogo {
+      max-width: 20px; 
+    }
+
+    #footer .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        font-size: 8px;
+      }
+    
+    .footer-envelope {
+      max-height: 10px; 
+    }
+
+    .footer-links, p {
+        font-size: 8;
+        
+    }
+    
+    .facebooklogo,
+    .twitterlogo {
+      max-height: 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+
+    #footer {
+        background-color: rgb(222, 66, 26);
+        height: 50px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-top: 40px;
+      }
+
+    #footer .baselogo {
+      max-width: 60px; 
+      margin: 0 auto;
+    }
+
+    #footer .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        font-size: 6px;
+        flex-wrap: wrap;
+      }
+    
+    .footer-envelope {
+      display: none; 
+    }
+
+    .footer-links, p {
+        display: none;
+        
+    }
+    
+    .facebooklogo,
+    .twitterlogo {
+     display: none;
+
+    }
+  }
+
+
+
+
+  
 /* Game Info Page */
 
 .pegi-agerating-infopage {
