@@ -9,7 +9,6 @@ body {
     margin: 0;
     background-image: url(./Images/galaxy.jpg);
     background-repeat: no-repeat;
-    min-width: 400px;
     
     
 }
@@ -30,7 +29,7 @@ p {
 /*Header Section*/
 
 #wrapper {
-    max-width: 80%;
+    max-width: 90%;
     border-radius: 20px;
     margin: 0 auto;
     justify-content: center;
@@ -105,30 +104,25 @@ header#main .headerbottom  ul li a::before {
     color: white;
 }
 
-header#navigation ul li {
+.navigation ul li {
     list-style: none;
     display: inline-block;
     padding-right: 12px;
     padding-bottom: 0px;
-
 }
 
-
-header#navigation ul li a {
+.navigation ul li a {
     position: relative;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 1em;
     text-transform: uppercase;
-
 }
 
-header#navigation ul li a#homebutton:hover {
-    
-    border: 1px solid rgb(white);
+.navigation ul li a#homebutton:hover {
+    border: 1px solid white;
     background-color: transparent;
     border-radius: 4px;
-
 }
 /* Dropdown menu*/
 
@@ -195,6 +189,9 @@ header#navigation ul li a#homebutton:hover {
 
   }
 
+  .yourfirstmove {
+    margin-top: -40px;
+  }
   @media screen and (max-width: 500px) {
     .drifting-images-text {
         color: white;
@@ -205,28 +202,62 @@ header#navigation ul li a#homebutton:hover {
       }
 
   }
-
   @media screen and (max-width: 480px) {
     .drifting-images-text {
         color: white;
         padding-left: 15px;
-        font-size: 10px;
+        font-size: 12px;
         margin: 15px;
-    
-      }
+     }
 
   }
-
-
-
   
-.popularimages {
+
+
+  .special-offer-box, .image-container, a {
     border-radius: 20px;
     border: 2px solid rgb(222, 66, 26);
     height: 100px;
-    max-width: 40%;
-    min-width: 100px;
-    flex-wrap: wrap;
+    width: 100px;
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .special-offer-box, .image-container, a {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .special-offer-box, .image-container, a {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .special-offer-box, .image-container, a  {
+      width: 300px;
+      height: 300px;
+      margin: auto;
+    }
+  }
+ 
+
+  .popularrightnow, .ourbestsellers {
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .popularrightnow, .ourbestsellers {
+        padding: 10px;
+        font-size: 20px;
+      }
+   
   }
   
 .special-offer-box {
@@ -247,21 +278,12 @@ header#navigation ul li a#homebutton:hover {
   }
 
   @media screen and (max-width: 600px) {
-
-    .popularimages {
-        border-radius: 20px;
-        border: 2px solid rgb(222, 66, 26);
-        height: 100px;
-        max-width: 30%;
-        min-width: 100px;
-        flex-wrap: wrap;
-      }
     
     .title-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 12px;
+        font-size: 15px;
       }
 
   }
@@ -274,9 +296,14 @@ header#navigation ul li a#homebutton:hover {
 
   /* main body */
 
-h1 {
+h2 {
     color: white;
     text-align: center;
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 25px;
   }
 
 .mainbodygamename {
@@ -330,7 +357,6 @@ h1 {
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
     margin: 0 auto;
-    max-width: 90%;
     color: white;
     background-color: rgba(222, 66, 26, 0.3);
     margin: 20px;
@@ -381,9 +407,6 @@ h1 {
   .twitterlogo {
     max-height: 35px;
   }
-  
-
-
 
   /* Media query for smaller screens */
   @media screen and (max-width: 720px) {
@@ -522,7 +545,14 @@ h1 {
 
 
 
-  
+
+
+
+
+
+
+/* Game Info Page */
+/* Game Info Page */
 /* Game Info Page */
 
 .pegi-agerating-infopage {
