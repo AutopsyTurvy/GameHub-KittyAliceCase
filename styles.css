@@ -208,6 +208,11 @@ header#main .headerbottom  ul li a::before {
 
   }
 
+  .yourdirectory {
+    text-align: center;
+
+  }
+
   .yourfirstmove {
     margin-top: -40px;
   }
@@ -264,7 +269,22 @@ header#main .headerbottom  ul li a::before {
       margin: auto;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    .popularimages, .bestsellers {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+    }
+  }
  
+  @media screen and (max-width: 430px) {
+    .popularimages, .bestsellers {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+  }
 
   .popularrightnow, .ourbestsellers {
     padding: 15px;
@@ -362,7 +382,8 @@ h2 {
 }
 
 .centergame {
-  display: block;
+  display: flex;
+  align-self: center;
   margin: 0 auto;
   border: 2px solid rgb(222, 66, 26);
   border-radius: 20px;
