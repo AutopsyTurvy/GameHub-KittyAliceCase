@@ -383,7 +383,7 @@ h2 {
 
 .centergame {
   display: flex;
-  align-self: center;
+  justify-content: center;
   margin: 0 auto;
   border: 2px solid rgb(222, 66, 26);
   border-radius: 20px;
