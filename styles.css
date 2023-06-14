@@ -133,7 +133,7 @@ header#main .headerbottom  ul li a::before {
     text-transform: uppercase;
 }
 
-.navigation ul li a#homebutton:hover {
+#homebutton #gamesbutton #aboutbutton #contactbutton:hover {
     border: 1px solid white;
     background-color: transparent;
     border-radius: 2px;
