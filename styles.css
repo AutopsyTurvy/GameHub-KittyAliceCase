@@ -265,6 +265,39 @@ header#main .headerbottom  ul li a::before {
     padding-top: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+
+    .special-offer-box {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 2;
+        grid-gap: 10px;
+        border: 2px solid rgb(222, 66, 26);
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+        color: white;
+        background-color: rgba(222, 66, 26, 0.3);
+        overflow:scroll;
+      
+      }
+      
+      .special-offer-box div {
+          margin: 0 auto;
+          padding: 10px;
+      }
+      
+      
+      .popularrightnow {
+          grid-column: 1 /9;
+          margin: 0 auto;
+          padding-top: 20px;
+      }
+
+
+
+}
+
 
 .popularimages, .bestsellers {
     border-radius: 20px;
@@ -273,6 +306,8 @@ header#main .headerbottom  ul li a::before {
     width: 150px;
 
   }
+
+
 
 
   /* main body */
