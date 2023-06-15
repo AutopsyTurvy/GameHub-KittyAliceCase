@@ -249,7 +249,6 @@ header#main .headerbottom  ul li a::before {
   max-width: 90%;
   color: white;
   background-color: rgba(222, 66, 26, 0.3);
-  overflow:scroll;
 
 }
 
@@ -265,7 +264,7 @@ header#main .headerbottom  ul li a::before {
     padding-top: 20px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: px) {
 
     .special-offer-box {
         display: grid;
@@ -288,6 +287,49 @@ header#main .headerbottom  ul li a::before {
           margin: 0 auto;
           padding-top: 20px;
       }
+
+      .popularimages, .bestsellers {
+        border-radius: 20px;
+        border: 2px solid rgb(222, 66, 26);
+        min-height: 100px;
+        width: 100px;
+    
+      }
+}
+
+@media screen and (max-width: 500px) {
+
+    .special-offer-box {
+      
+        border: 2px solid rgb(222, 66, 26);
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+        color: white;
+        background-color: rgba(222, 66, 26, 0.3);
+      
+      }
+      
+      .special-offer-box div {
+          padding: 5px;
+        
+      }
+      
+      
+      .popularrightnow {
+          margin: 0 auto;
+          padding-top: 20px;
+          font-size: 20px;
+          float: left;
+      }
+
+      .popularimages, .bestsellers {
+        border-radius: 20px;
+        border: 2px solid rgb(222, 66, 26);
+        min-height: 80px;
+        width: 80px;
+    
+      }
 }
 
 @media screen and (min-width: 750px) {
@@ -303,7 +345,6 @@ header#main .headerbottom  ul li a::before {
         max-width: 90%;
         color: white;
         background-color: rgba(222, 66, 26, 0.3);
-        overflow: hidden;
       
       }
       
@@ -333,7 +374,6 @@ header#main .headerbottom  ul li a::before {
         max-width: 90%;
         color: white;
         background-color: rgba(222, 66, 26, 0.3);
-        overflow: hidden;
       
       }
       
@@ -366,7 +406,7 @@ header#main .headerbottom  ul li a::before {
         max-width: 90%;
         color: white;
         background-color: rgba(222, 66, 26, 0.3);
-        overflow: hidden;
+
       
       }
       
