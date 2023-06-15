@@ -242,27 +242,27 @@ header#main .headerbottom  ul li a::before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(100px, auto);
-  grid-template-rows: minmax(150px auto);
+  grid-gap: 10px;
   border: 2px solid rgb(222, 66, 26);
   border-radius: 20px;
   margin: 0 auto;
   max-width: 90%;
   color: white;
   background-color: rgba(222, 66, 26, 0.3);
+  overflow:scroll;
 
+}
+
+.special-offer-box div {
+    margin: 0 auto;
+    padding: 10px;
 }
 
 
 .popularrightnow {
     grid-column: 1 /3;
-}
-
-.gameone {
-    grid-column: 1 / 2;
-}
-
-.gametwo {
-    grid-column: 2 / 3;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 
@@ -273,30 +273,6 @@ header#main .headerbottom  ul li a::before {
     width: 150px;
 
   }
-  
-
-
-  .popularrightnow, .ourbestsellers {
-    padding: 15px;
-  }
-
-
-
-  @media screen and (max-width: 600px) {
-    
-    .title-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 15px;
-      }
-
-  }
-
-  
-
-  
-
 
 
   /* main body */
