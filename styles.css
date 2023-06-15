@@ -265,7 +265,100 @@ header#main .headerbottom  ul li a::before {
     padding-top: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 550px) {
+
+    .special-offer-box {
+        display: grid;
+        grid-template-columns: 1;
+        grid-gap: 10px;
+        border: 2px solid rgb(222, 66, 26);
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+        color: white;
+        background-color: rgba(222, 66, 26, 0.3);
+        overflow: hidden;
+      
+      }
+      
+      .special-offer-box div {
+          margin: 0 auto;
+          padding: 10px;
+      }
+      
+      
+      .popularrightnow {
+          grid-column: 1 /2;
+          margin: 0 auto;
+          padding-top: 20px;
+          font-size: smaller;
+      }
+}
+
+@media screen and (min-width: 750px) {
+
+    .special-offer-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2;
+        grid-gap: 10px;
+        border: 2px solid rgb(222, 66, 26);
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+        color: white;
+        background-color: rgba(222, 66, 26, 0.3);
+        overflow: hidden;
+      
+      }
+      
+      .special-offer-box div {
+          margin: 0 auto;
+          padding: 10px;
+      }
+      
+      
+      .popularrightnow {
+          grid-column: 1 /4;
+          margin: 0 auto;
+          padding-top: 20px;
+      }
+}
+
+@media screen and (min-width: 850px) {
+
+    .special-offer-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2;
+        grid-gap: 10px;
+        border: 2px solid rgb(222, 66, 26);
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+        color: white;
+        background-color: rgba(222, 66, 26, 0.3);
+        overflow: hidden;
+      
+      }
+      
+      .special-offer-box div {
+          margin: 0 auto;
+          padding: 10px;
+      }
+      
+      
+      .popularrightnow {
+          grid-column: 1 /4;
+          margin: 0 auto;
+          padding-top: 20px;
+      }
+
+
+
+}
+
+@media screen and (min-width: 900px) {
 
     .special-offer-box {
         display: grid;
@@ -278,7 +371,7 @@ header#main .headerbottom  ul li a::before {
         max-width: 90%;
         color: white;
         background-color: rgba(222, 66, 26, 0.3);
-        overflow:scroll;
+        overflow: hidden;
       
       }
       
@@ -293,9 +386,6 @@ header#main .headerbottom  ul li a::before {
           margin: 0 auto;
           padding-top: 20px;
       }
-
-
-
 }
 
 
