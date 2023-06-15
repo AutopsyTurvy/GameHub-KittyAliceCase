@@ -267,8 +267,8 @@ header#main .headerbottom  ul li a::before {
 .popularimages, .bestsellers {
     border-radius: 20px;
     border: 2px solid rgb(222, 66, 26);
-    min-height: 100px;
-    width: 100px;
+    min-height: 150px;
+    width: 150px;
 
   }
   
