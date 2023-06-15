@@ -265,33 +265,28 @@ header#main .headerbottom  ul li a::before {
     padding-top: 20px;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 400px) {
 
     .special-offer-box {
         display: grid;
-        grid-template-columns: 1;
-        grid-gap: 10px;
+        grid-template-columns: auto;
         border: 2px solid rgb(222, 66, 26);
         border-radius: 20px;
         margin: 0 auto;
         max-width: 90%;
         color: white;
         background-color: rgba(222, 66, 26, 0.3);
-        overflow: hidden;
       
       }
       
       .special-offer-box div {
-          margin: 0 auto;
           padding: 10px;
       }
       
       
       .popularrightnow {
-          grid-column: 1 /2;
           margin: 0 auto;
           padding-top: 20px;
-          font-size: smaller;
       }
 }
 
