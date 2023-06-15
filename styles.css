@@ -133,7 +133,7 @@ header#main .headerbottom  ul li a::before {
     text-transform: uppercase;
 }
 
-#homebutton #gamesbutton #aboutbutton #contactbutton:hover {
+#homebutton, #gamesbutton, #aboutbutton, #contactbutton:hover {
     border: 1px solid white;
     background-color: transparent;
     border-radius: 2px;
@@ -224,8 +224,8 @@ header#main .headerbottom  ul li a::before {
         margin: 15px;
     
       }
+    }
 
-  }
   @media screen and (max-width: 480px) {
     .drifting-images-text {
         color: white;
@@ -235,86 +235,50 @@ header#main .headerbottom  ul li a::before {
      }
 
   }
+
+
   
+.special-offer-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(100px, auto);
+  border: 2px solid rgb(222, 66, 26);
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 90%;
+  color: white;
+  background-color: rgba(222, 66, 26, 0.3);
+}
 
 
-  .popularimages, .bestsellers {
+.popularrightnow {
+    grid-column: 1 /3;
+}
+
+.gameone {
+    grid-column: 1 / 2;
+}
+
+.gametwo {
+    grid-column: 2 / 3;
+}
+
+
+.popularimages, .bestsellers {
     border-radius: 20px;
     border: 2px solid rgb(222, 66, 26);
-    height: 100px;
+    min-height: 100px;
     width: 100px;
-    margin: auto;
-  }
 
-  @media screen and (max-width: 600px) {
-    .popularimages, .bestsellers{
-      width: 160px;
-      height: 160px;
-      margin: auto;
-    }
   }
   
-  @media screen and (max-width: 500px) {
-    .popularimages, .bestsellers{
-      width: 160px;
-      height: 160px;
-      margin: auto;
-    }
-  }
-  
-  @media screen and (max-width: 450px) {
-    .popularimages, .bestsellers {
-      width: 160px;
-      height: 160px;
-      margin: auto;
-    }
-  }
 
-  @media screen and (max-width: 450px) {
-    .popularimages, .bestsellers {
-      width: 120px;
-      height: 120px;
-      margin: auto;
-    }
-  }
- 
-  @media screen and (max-width: 430px) {
-    .popularimages, .bestsellers {
-      width: 100px;
-      height: 100px;
-      margin: auto;
-    }
-  }
 
   .popularrightnow, .ourbestsellers {
     padding: 15px;
   }
 
-  @media screen and (max-width: 600px) {
 
-    .popularrightnow, .ourbestsellers {
-        padding: 10px;
-        font-size: 20px;
-      }
-   
-  }
-  
-.special-offer-box {
-    border: 2px solid rgb(222, 66, 26);
-    border-radius: 20px;
-    margin: 0 auto;
-    max-width: 90%;
-    color: white;
-    background-color: rgba(222, 66, 26, 0.3);
-    margin: 20px;
-    padding: 15px;
-  }
-  
-.title-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 
   @media screen and (max-width: 600px) {
     
@@ -326,12 +290,12 @@ header#main .headerbottom  ul li a::before {
       }
 
   }
+
   
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
+
+  
+
+
 
   /* main body */
 
