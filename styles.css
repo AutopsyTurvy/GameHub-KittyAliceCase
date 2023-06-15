@@ -133,11 +133,60 @@ header#main .headerbottom  ul li a::before {
     text-transform: uppercase;
 }
 
-#homebutton, #gamesbutton, #aboutbutton, #contactbutton:hover {
+
+/*
+(for some reason, writing them like this disables all of the links but the last?)
+.arrow-container, #gamesbutton, #aboutbutton, #contactbutton:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+}*/
+
+
+#homebutton:hover {
     border: 1px solid white;
     background-color: transparent;
     border-radius: 2px;
 }
+
+#gamesbutton:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+#aboutbutton:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+#contactbutton:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #homebutton:hover {
+        display: none;
+    }
+    
+    #gamesbutton:hover {
+        display: none;
+    }
+    
+    #aboutbutton:hover {
+       display: none;
+    }
+    
+    #contactbutton:hover {
+        display: none;
+    }
+    }
+
+
 
 
 
@@ -300,7 +349,6 @@ header#main .headerbottom  ul li a::before {
 @media screen and (max-width: 500px) {
 
     .special-offer-box {
-      
         border: 2px solid rgb(222, 66, 26);
         border-radius: 20px;
         margin: 0 auto;
@@ -315,19 +363,17 @@ header#main .headerbottom  ul li a::before {
         
       }
       
-      
       .popularrightnow {
           margin: 0 auto;
           padding-top: 20px;
           font-size: 20px;
-          float: left;
       }
 
-      .popularimages, .bestsellers {
+      .popularimages {
         border-radius: 20px;
         border: 2px solid rgb(222, 66, 26);
-        min-height: 80px;
-        width: 80px;
+        min-height: auto;
+
     
       }
 }
