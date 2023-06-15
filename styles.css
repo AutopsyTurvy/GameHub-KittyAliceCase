@@ -269,7 +269,7 @@ header#main .headerbottom  ul li a::before {
 
     .special-offer-box {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 2;
         grid-gap: 10px;
         border: 2px solid rgb(222, 66, 26);
@@ -289,7 +289,7 @@ header#main .headerbottom  ul li a::before {
       
       
       .popularrightnow {
-          grid-column: 1 /9;
+          grid-column: 1 /7;
           margin: 0 auto;
           padding-top: 20px;
       }
