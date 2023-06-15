@@ -167,27 +167,28 @@ header#main .headerbottom  ul li a::before {
     border-radius: 2px;
 }
 
-@media screen and (max-width: 600px) {
+#dropdown {
+    display: none;
+}
 
-    #homebutton:hover {
+@media screen and (max-width: 500px) {
+
+    #homebutton {
         display: none;
     }
     
-    #gamesbutton:hover {
+    #gamesbutton {
         display: none;
     }
     
-    #aboutbutton:hover {
+    #aboutbutton {
        display: none;
     }
     
-    #contactbutton:hover {
+    #contactbutton {
         display: none;
     }
     }
-
-
-
 
 
 
