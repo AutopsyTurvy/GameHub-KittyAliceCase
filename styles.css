@@ -242,12 +242,14 @@ header#main .headerbottom  ul li a::before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(100px, auto);
+  grid-template-rows: minmax(150px auto);
   border: 2px solid rgb(222, 66, 26);
   border-radius: 20px;
   margin: 0 auto;
   max-width: 90%;
   color: white;
   background-color: rgba(222, 66, 26, 0.3);
+
 }
 
 
