@@ -188,9 +188,11 @@ header#main .headerbottom  ul li a::before {
     #contactbutton {
         display: none;
     }
+
+    #dropdown {
+        width: 30px;
     }
-
-
+}
 
 
 
