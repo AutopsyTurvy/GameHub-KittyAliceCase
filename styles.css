@@ -44,11 +44,11 @@ p {
 }
 
 header#main {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
     border: 2px solid rgb(222,66,26);
     background-color: black;
-    border-radius: 20px;
+    border-radius: 18px;
     justify-content: center;
     background-image: url(./Images/8bit.jpg);
     background-color: rgb(30,48,62);
