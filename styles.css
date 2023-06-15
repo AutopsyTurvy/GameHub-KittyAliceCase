@@ -191,6 +191,7 @@ header#main .headerbottom  ul li a::before {
 
     #dropdown {
         width: 30px;
+
     }
 }
 
@@ -231,6 +232,9 @@ header#main .headerbottom  ul li a::before {
     display: block;
 
 }
+
+
+
 
 /* drifting images under header*/
 
@@ -316,9 +320,7 @@ header#main .headerbottom  ul li a::before {
     padding-top: 20px;
 }
 
-@media screen and (max-width: px) {
-
-    .special-offer-box {
+.special-offer-box {
         display: grid;
         grid-template-columns: auto;
         border: 2px solid rgb(222, 66, 26);
@@ -330,24 +332,23 @@ header#main .headerbottom  ul li a::before {
       
       }
       
-      .special-offer-box div {
+.special-offer-box div {
           padding: 10px;
       }
       
       
-      .popularrightnow {
+.popularrightnow {
           margin: 0 auto;
           padding-top: 20px;
       }
 
-      .popularimages, .bestsellers {
+.popularimages, .bestsellers {
         border-radius: 20px;
         border: 2px solid rgb(222, 66, 26);
         min-height: 100px;
         width: 100px;
     
       }
-}
 
 @media screen and (max-width: 500px) {
 
