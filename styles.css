@@ -8,6 +8,7 @@ body {
     background-image: url(./Images/galaxy.jpg);
     background-repeat: no-repeat;
     font-size: 3em;
+    background-color: black;
 }
 
 h1,
@@ -126,15 +127,6 @@ header#main nav ul li a {
     font-size: 1em;
     text-transform: uppercase;
 }
-
-
-/*
-(for some reason, writing them like this disables all of the links but the last?)
-.arrow-container, #gamesbutton, #aboutbutton, #contactbutton:hover {
-    border: 1px solid white;
-    background-color: transparent;
-    border-radius: 2px;
-}*/
 
 
 #homebutton:hover {
@@ -272,15 +264,31 @@ header#main nav ul li a {
     overflow: hidden;
 }
 
-#popular article a img {
-    display: block;
-    width: 100%;
+#popular article a {
+    position: relative;
+    padding-top: 100%;
 }
 
-#popular article a {
-    display: block;
+#popular article a img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    transition: all 1s ease;
 }
+
+#popular article a:hover img {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    transition: all 1s ease;
+}
+
+
+
 
 @media screen and (max-width: 500px) {
     #popular {
