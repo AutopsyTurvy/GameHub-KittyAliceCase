@@ -564,7 +564,6 @@ outline: none;
 
 .about-us-images {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     min-height: 100px;
     max-width: 100%;
     
@@ -585,9 +584,8 @@ outline: none;
     .about-us-images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
         max-width: 100%;
-        align-items:end;
+        margin: 10px;
         
       }
     
@@ -599,7 +597,7 @@ outline: none;
         max-width: 150px;
       }
     
-    .our-consoles-centre,.our-consoles {
+    .our-consoles-centre, .our-consoles {
         margin: 0 auto;
         border: 2px solid rgb(222, 66, 26);
         border-radius: 20px;
