@@ -160,9 +160,9 @@ header#main nav ul li a {
 }
 
 
-header#main nav >#expand-menu {
+header#main nav >#button{
 
-display: inline-block;
+display: inline;
 background-image: url(/Images/dropdownicon.png);
 background-size: contain;
 background-repeat: no-repeat;
@@ -468,12 +468,12 @@ outline: none;
     margin-right: auto;
 }
 
-#footer .footer-links {
+#footer >a{
     display: grid;
-    grid-template-columns: 12fr;
-    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     height: 100%;
     font-size: 1em;
+
 }
 
 .footer-envelope {
@@ -485,16 +485,15 @@ outline: none;
 
     max-height: 2em;
     margin: 0.2em;
-    float: right;
-    grid-column: 10/12;
     padding-right: 5px;
-    justify-self: end;
+    grid-column: span 2;
+    
 }
 .facebooklogo {
 
     max-height: 2em;
-    grid-column: 5/7;
     margin: 0.2em;
+    grid-column: span 2;
 }
 
 
