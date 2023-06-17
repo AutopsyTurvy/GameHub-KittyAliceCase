@@ -540,11 +540,11 @@ outline: none;
     align-content: center;
 }
 
-.purchasegamebutton {
+.purchasegamebutton, .email-us-button {
     display: flex;
     color: white;
     background-color: rgb(222, 66, 26);
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     justify-content: center;
     align-content: center;
@@ -553,13 +553,60 @@ outline: none;
   
 /* About Us Styles*/
 
-
-.about-us-images {
+.about-us-wrapper {
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
-    min-width: ;
-}
-.our-consoles-centre {
+    background-image: url(/Images/controllerimage.jpg);
+    background-position: center;
+    height: 100%; 
     
+}
+
+.about-us-images {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 100px;
+    max-width: 100%;
+    
+  }
+
+
+.our-consoles-centre,.our-consoles {
+    margin: 0 auto;
+    border: 2px solid rgb(222, 66, 26);
+    border-radius: 20px;
+    max-width: 80%;
+    height: auto;
 
 }
+
+@media screen and (min-width: 480px) {
+
+    .about-us-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        min-height: 100px;
+        max-width: 100%;
+        
+      }
+    
+      .our-consoles-centre {
+        min-width: 120px;
+      }
+      
+      .our-consoles {
+        max-width: 150px;
+      }
+    
+    .our-consoles-centre,.our-consoles {
+        margin: 0 auto;
+        border: 2px solid rgb(222, 66, 26);
+        border-radius: 20px;
+        max-width: 90%;
+        height: auto;
+    
+    }
+
+
+}
+
