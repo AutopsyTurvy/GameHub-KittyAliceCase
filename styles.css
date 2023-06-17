@@ -336,7 +336,7 @@ header#main nav ul li a {
 /*browse our other games*/
 
 #othergames {
-    background-image: url(Images/controller72dpi.jpg);
+    background-image: url(Images/laptop72dpi.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.8;
@@ -396,31 +396,31 @@ header#main nav ul li a {
 
 
 @media screen and (max-width: 500px) {
-    #popular {
+    #othergames {
         grid-template-columns: 1fr 1fr;
     }
 
-    #popular h3 {
+    #othergames h3 {
         grid-column: 1 / 3;
     }
 }
 
 @media screen and (min-width: 750px) {
-    #popular {
+    #othergames {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #popular h3 {
+    #othergames h3 {
         grid-column: 1 / 4;
     }
 }
 
 @media screen and (min-width: 850px) {
-    #popular {
+    #othergames {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    #popular h3 {
+    #othergames {
         grid-column: 1 / 5;
     }
 }
