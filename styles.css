@@ -122,6 +122,8 @@ header#main nav {
     color: white;
     font-size: larger;
     padding-bottom: 6px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 header#main nav ul {
@@ -160,9 +162,8 @@ header#main nav ul li a {
 }
 
 
-header#main nav >#button{
-
-display: inline;
+header#main nav #button >drop-down-menu{
+display: grid;
 background-image: url(/Images/dropdownicon.png);
 background-size: contain;
 background-repeat: no-repeat;
