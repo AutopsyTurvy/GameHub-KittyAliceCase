@@ -48,7 +48,7 @@ p {
 
 @media screen and (min-width: 500px) {
     body {
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
 
@@ -173,43 +173,6 @@ header#main nav ul li a {
 
 
 
-/* Dropdown menu
-
-.drop-down {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 3;
-}
-
-.dropdown-hover {
-    display: inline-block;
-    padding: 10px;
-    background: rgb(30, 48, 62);
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-}
-
-.dropdown-hover:hover {
-    background: #1b203d;
-}
-
-.dropdown-menu {
-    position: absolute;
-    min-width: 200px;
-    background: white;
-    color: #1b203d;
-
-}
-
-.dropdown-hover .dropdown-menu {
-    display: block;
-
-}
-*/
-
 /* welcome */
 #welcome {
     display: block;
@@ -217,6 +180,7 @@ header#main nav ul li a {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    background-image: url(Images/controller72dpi.jpg);
 }
 
 
@@ -258,7 +222,7 @@ header#main nav ul li a {
 #popular article a {
     position: relative;
     display: block;
-    padding-top: 56.25%;
+    padding-top: 90%;
 }
 
 #popular article a img {
@@ -369,26 +333,106 @@ header#main nav ul li a {
 
 
 
-.best-seller-box {
+/*browse our other games*/
+
+#othergames {
+    background-image: url(Images/controller72dpi.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    overflow: hidden;
+    display: grid;
+    gap: 15px;
+    padding: 15px;
+    grid-template-columns: 100%;
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
     margin: 0 auto;
+    max-width: 90%;
     color: white;
     background-color: rgba(222, 66, 26, 0.3);
-    margin: 20px;
-    padding: 15px;
 }
 
-@media screen and (max-width: 600px) {
+#othergames h3 {
+    grid-column: 1;
+    margin: 0 auto;
+    padding-top: 20px;
+    margin-bottom: 1em;
+}
 
-    .best-seller-box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 12px;
+#othergames article {
+    padding: 10px;
+    border-radius: 20px;
+    padding: 0;
+    border: 2px solid rgb(222, 66, 26);
+    overflow: hidden;
+}
+
+#othergames article a {
+    position: relative;
+    display: block;
+    padding-top: 90%;
+}
+
+#othergames article a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+#othergames article a:hover img {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    transition: all 1s ease-in;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    #popular {
+        grid-template-columns: 1fr 1fr;
     }
 
+    #popular h3 {
+        grid-column: 1 / 3;
+    }
 }
+
+@media screen and (min-width: 750px) {
+    #popular {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #popular h3 {
+        grid-column: 1 / 4;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #popular {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #popular h3 {
+        grid-column: 1 / 5;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+
+
+
+
 
 /* footer section */
 
