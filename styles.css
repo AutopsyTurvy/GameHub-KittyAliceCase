@@ -39,6 +39,7 @@ p {
     color: white;
     padding: 20px;
     margin: 0 auto;
+    font-size: 0.8em;
 }
 
 .dont-hug-me-im-scared {
@@ -550,3 +551,15 @@ outline: none;
 
 }
   
+/* About Us Styles*/
+
+
+.about-us-images {
+    border: 2px solid rgb(222, 66, 26);
+    border-radius: 20px;
+    min-width: ;
+}
+.our-consoles-centre {
+    
+
+}
