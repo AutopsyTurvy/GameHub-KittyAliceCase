@@ -25,7 +25,8 @@ h5 {
     font-weight: 500;
     color: white;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px;
+    font-size: 1.8em;
 }
 
 a {
@@ -102,7 +103,7 @@ header#main a#logo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: 90%;
     max-width: 220px;
     height: 80%;
     margin-top: 1em;
@@ -153,13 +154,29 @@ header#main nav ul li a {
     display: none;
 }
 
-#drop-down-icon {
+#dropdownicon {
     display: grid;
     height: 15px;
 }
 
+
+header#main nav >#expand-menu {
+
+display: inline-block;
+background-image: url(/Images/dropdownicon.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+padding: 0.8em 1em;
+background-color: transparent;
+border: 2px solid rgba(0,0,0,0.3);
+border-radius: 3px;
+outline: none;
+}
+
+
 @media (min-width: 769px) {
-    #drop-down-icon {
+    #dropdownicon {
         display: none;
     }
 
@@ -285,6 +302,7 @@ header#main nav ul li a {
 
 
 /* main body */
+
 .mainbodygamename {
 
     color: white;
@@ -317,7 +335,7 @@ header#main nav ul li a {
 
 .arrow-container {
     position: relative;
-    margin-top: 20px;
+    margin: 30px;
 }
 
 .centergame {
@@ -446,162 +464,38 @@ header#main nav ul li a {
 
 #footer .baselogo {
     max-width: 60px;
-    padding: 10px;
+    padding: 5px;
     margin-right: auto;
 }
 
 #footer .footer-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-rows: 50px;
     height: 100%;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .footer-envelope {
-    max-height: 30px;
+    max-height: 1.5em;
+    margin: 0.5em;
 }
 
-.facebooklogo,
 .twitterlogo {
-    max-height: 35px;
+
+    max-height: 2em;
+    margin: 0.2em;
+    float: right;
+    grid-column: 10/12;
+    padding-right: 5px;
+    justify-self: end;
 }
+.facebooklogo {
 
-/* Media query for smaller screens */
-@media screen and (max-width: 720px) {
-    #footer .baselogo {
-        max-width: 50px;
-    }
-
-    #footer .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-        font-size: 12px;
-    }
-
-    .footer-envelope {
-        max-height: 25px;
-    }
-
-    .footer-links p {
-        font-size: 10;
-
-    }
-
-    .facebooklogo,
-    .twitterlogo {
-        max-height: 20px;
-        flex-wrap: wrap;
-    }
+    max-height: 2em;
+    grid-column: 5/7;
+    margin: 0.2em;
 }
-
-@media screen and (max-width: 600px) {
-    #footer .baselogo {
-        max-width: 40px;
-    }
-
-    #footer .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        font-size: 8px;
-    }
-
-    .footer-envelope {
-        max-height: 15px;
-    }
-
-    .footer-links p {
-        font-size: 8px;
-
-    }
-
-    .facebooklogo,
-    .twitterlogo {
-        max-height: 20px;
-        flex-wrap: wrap;
-    }
-}
-
-
-
-@media screen and (min-width: 500px) {
-    #footer .baselogo {
-        max-width: 20px;
-    }
-
-    #footer .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        font-size: 8px;
-    }
-
-    .footer-envelope {
-        max-height: 10px;
-    }
-
-    .footer-links p {
-        font-size: 8px;
-
-    }
-
-    .facebooklogo,
-    .twitterlogo {
-        max-height: 20px;
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 470px) {
-
-    #footer {
-        background-color: rgb(222, 66, 26);
-        height: 50px;
-        border-bottom-left-radius: 16px;
-        border-bottom-right-radius: 16px;
-        margin-top: 40px;
-    }
-
-    #footer .baselogo {
-        max-width: 60px;
-        margin: 0 auto;
-    }
-
-    #footer .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        font-size: 6px;
-        flex-wrap: wrap;
-    }
-
-    .footer-envelope {
-        display: none;
-    }
-
-    .footer-links p {
-        display: none;
-
-    }
-
-    .facebooklogo,
-    .twitterlogo {
-        display: none;
-
-    }
-}
-
 
 
 
