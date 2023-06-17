@@ -585,8 +585,9 @@ outline: none;
     .about-us-images {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        min-height: 100px;
+
         max-width: 100%;
+        align-items:end;
         
       }
     
