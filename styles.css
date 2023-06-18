@@ -571,7 +571,7 @@ outline: none;
     max-width: 20px;
 }
 
-.purchasegamebutton, .email-us-button {
+.purchasegamebutton, .email-us-button, .email-success {
     display: block;
     color: white;
     background-color: rgb(222, 66, 26);
@@ -755,4 +755,6 @@ form {
     background-color: rgb(222, 66, 26);
     border-radius: 20px;
   }
+
+
 
