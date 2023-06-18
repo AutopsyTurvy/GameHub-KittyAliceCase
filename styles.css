@@ -895,3 +895,10 @@ form {
 .make-your-purchase-button {
     padding: 10px;
 }
+
+@media screen and (min-width: 750px) {
+.cart-page-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+}
