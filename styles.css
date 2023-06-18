@@ -528,35 +528,47 @@ outline: none;
 
 /* Game Info styles */
 
-.pegi-agerating-infopage {
-    max-width: 40px;
+.pertinent-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 70%;
+    margin: 0 auto;
+
 }
 
-.pricebox {
-
+.pegi18 {
     color: white;
     background-color: rgb(222, 66, 26);
     padding: 10px;
+    align-self: center;
+    max-width: fit-content;  
+}
+
+.pricebox {
+    color: white;
+    background-color: rgb(222, 66, 26);
+    padding: 10px;
+    border-radius: 20px;
+    align-self: center;
+    grid-column: 5/6;
+   
 }
 
 .singleplayer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     color: white;
     background-color: rgb(222, 66, 26);
     padding: 10px;
     margin: 5px;
-
+    border-radius: 20px;
+    grid-column: 6/7;
+    
 }
 
 .singleplayericon {
     max-width: 20px;
-
-}
-
-.pertinent-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 90%;
-
 }
 
 .purchasegamebutton, .email-us-button {
@@ -581,7 +593,7 @@ outline: none;
 
 /* About Us Styles*/
 
-.about-us-wrapper {
+.about-us-wrapper, .game-info-background {
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
     background-image: url(/Images/controllerimage.jpg);
