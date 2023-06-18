@@ -920,7 +920,7 @@ form {
     font-size: 1.2em;
 }
 
-.card-payment-select {
+.payment-select {
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
     display: flex;
@@ -948,7 +948,11 @@ form {
 }
 
 .checkout-summary {
-    background-color: rgb(222, 66, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
 }
 
 .make-your-purchase-button {
