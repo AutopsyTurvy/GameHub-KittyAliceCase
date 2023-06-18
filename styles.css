@@ -564,13 +564,21 @@ outline: none;
 
 .about-us-images {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     min-height: 100px;
     max-width: 100%;
     
   }
 
+.our-consoles-centre{
+    grid-column: 1/3;
+    grid-row: 1;
+}
 
-.our-consoles-centre,.our-consoles {
+
+
+
+.our-consoles-centre,.our-consoles-play, .our-consoles-phones {
     margin: 0 auto;
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
@@ -583,21 +591,27 @@ outline: none;
 
     .about-us-images {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(6fr);
         max-width: 100%;
         margin: 10px;
         
       }
     
       .our-consoles-centre {
-        min-width: 120px;
+        grid-row: 1/2;
+        
       }
-      
-      .our-consoles {
-        max-width: 150px;
+
+      .our-consoles-play {
+        grid-column: 0 / 1;
+      }
+
+      .our-consoles-phones {
+        grid-column: 2/3;
       }
     
-    .our-consoles-centre, .our-consoles {
+    
+    .our-consoles-centre, .our-consoles-play, .our-consoles-phones {
         margin: 0 auto;
         border: 2px solid rgb(222, 66, 26);
         border-radius: 20px;
