@@ -669,3 +669,90 @@ outline: none;
         grid-column: 6/8;
       } 
 }
+
+
+
+
+
+
+/*Email Us Page*/
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  legend {
+    color: white;
+    border: 1px solid rgb(222, 66, 26);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+  }
+  
+  input[type="email"],
+  input[type="text"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid rgb(222, 66, 26);
+    font-family: "Play", Arial, sans-serif;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(222, 66, 26);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  #popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(222, 66, 26);
+    padding: 20px;
+    border: 2px solid rgb(222, 66, 26);
+    z-index: 20;
+  }
+  
+  #subscribe:checked ~ #popup {
+    display: block;
+    background-color: rgb(222, 66, 26);
+    border-radius: 20px;
+  }
+
