@@ -778,6 +778,7 @@ form {
   }
 
   .email-success-section {
+    
     position: fixed;
     top: 50%;
     left: 50%;
@@ -790,6 +791,12 @@ form {
     z-index: 10000;
     display: block;
     
+  }
+
+  .success-logo {
+
+    max-width: 6em;
+    padding: 15px;
   }
 
   .email-success-text {
