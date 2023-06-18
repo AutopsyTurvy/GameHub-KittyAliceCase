@@ -506,9 +506,7 @@ outline: none;
 
 
 
-/* Game Info Page */
-/* Game Info Page */
-/* Game Info Page */
+/* Game Info styles */
 
 .pegi-agerating-infopage {
     max-width: 40px;
@@ -541,16 +539,23 @@ outline: none;
 }
 
 .purchasegamebutton, .email-us-button {
-    display: flex;
+    display: inline-block;
     color: white;
     background-color: rgb(222, 66, 26);
     padding: 5px;
     border-radius: 20px;
-    justify-content: center;
-    align-content: center;
+    margin: 0 auto;
 
 }
   
+
+
+
+
+
+
+
+
 /* About Us Styles*/
 
 .about-us-wrapper {
@@ -558,8 +563,7 @@ outline: none;
     border-radius: 20px;
     background-image: url(/Images/controllerimage.jpg);
     background-position: center;
-    height: 100%; 
-    
+    height: 100%;   
 }
 
 .about-us-images {
@@ -567,7 +571,7 @@ outline: none;
     grid-template-columns: 1fr 1fr;
     min-height: 100px;
     max-width: 100%;
-    
+    grid-gap: 10px;
   }
 
 .our-consoles-centre{
@@ -575,51 +579,36 @@ outline: none;
     grid-row: 1;
 }
 
-
-
-
 .our-consoles-centre,.our-consoles-play, .our-consoles-phones {
     margin: 0 auto;
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
     max-width: 80%;
     height: auto;
-
 }
 
 @media screen and (min-width: 480px) {
 
     .about-us-images {
         display: grid;
-        grid-template-columns: repeat(6fr);
+        grid-template-columns: 1fr 1fr 1fr;
         max-width: 100%;
-        margin: 10px;
-        
-      }
-    
-      .our-consoles-centre {
-        grid-row: 1/2;
+        grid-gap: 3px;
         
       }
 
       .our-consoles-play {
-        grid-column: 0 / 1;
+        grid-column: 1 / 2;
+      }
+
+      .our-consoles-centre {
+        grid-column: 2/3;
+        
       }
 
       .our-consoles-phones {
-        grid-column: 2/3;
+        grid-column: 3/4;
       }
     
-    
-    .our-consoles-centre, .our-consoles-play, .our-consoles-phones {
-        margin: 0 auto;
-        border: 2px solid rgb(222, 66, 26);
-        border-radius: 20px;
-        max-width: 90%;
-        height: auto;
-    
-    }
-
-
 }
 
