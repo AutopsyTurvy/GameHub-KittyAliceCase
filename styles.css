@@ -161,7 +161,8 @@ header#main nav ul li a {
 #homebutton,
 #gamesbutton,
 #aboutbutton,
-#contactbutton{
+#contactbutton,
+#cartbutton{
     display: none;
 }
 
@@ -193,7 +194,8 @@ outline: none;
     #homebutton,
     #gamesbutton,
     #aboutbutton,
-    #contactbutton {
+    #contactbutton,
+    #cartbutton {
         display: block;
     }
 }
