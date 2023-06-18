@@ -573,7 +573,11 @@ outline: none;
     max-width: 20px;
 }
 
-.purchasegamebutton, .email-us-button, .email-success, .make-your-purchase-button {
+.purchasegamebutton,
+ .email-us-button,
+  .email-success,
+   .make-your-purchase-button,
+    .purchase-complete-button {
 
     display: flex;
     justify-content:center;
@@ -951,14 +955,65 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
    
 
 }
 
-.make-your-purchase-button {
-    padding: 15px 30px;
-   
-    
-    
+.purchase-complete-button {
+    padding: 15px 30px;  
+    margin-bottom: 20px;
+
 }
 
+
+/*Submitting page*/
+
+#processing {
+    border: 2px solid rgb(222, 66, 26);
+    max-width: 90%;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#processing h1 {
+    font-size: 2em;
+}
+
+#buffering {
+    max-width: 70%;
+}
+
+
+
+
+
+/*Purchase Complete */
+
+#thank-you {
+    border: 2px solid rgb(222, 66, 26);
+    max-width: 80%;
+    border-radius: 20px;
+    background-color: rgb(30, 48, 62);
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+#done {
+    
+    margin: 0 auto;
+    border: 2px solid rgb(222, 66, 26);
+    background-color: rgb(30, 48, 62, 0.5);
+    max-width: 90%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-self: center;
+    align-content: center;
+}
