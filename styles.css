@@ -643,7 +643,29 @@ outline: none;
 
       .our-consoles-phones {
         grid-column: 3/4;
-      }
-    
+      } 
 }
 
+@media screen and (min-width: 750px) {
+
+    .about-us-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 100%;
+        grid-gap: 3px;
+        
+      }
+
+      .our-consoles-play {
+        grid-column: 1 / 3;
+      }
+
+      .our-consoles-centre {
+        grid-column: 3/6;
+        
+      }
+
+      .our-consoles-phones {
+        grid-column: 6/8;
+      } 
+}
