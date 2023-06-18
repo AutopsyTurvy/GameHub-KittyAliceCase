@@ -894,11 +894,16 @@ form {
 
 .make-your-purchase-button {
     padding: 10px;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width: 750px) {
 .cart-page-elements {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.make-your-purchase-button {
+    padding: 20px;
+    margin-bottom: 15px;
 }
 }
