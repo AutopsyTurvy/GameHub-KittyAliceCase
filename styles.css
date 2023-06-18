@@ -573,8 +573,12 @@ outline: none;
     max-width: 20px;
 }
 
-.purchasegamebutton, .email-us-button, .email-success {
-    display: block;
+.purchasegamebutton, .email-us-button, .email-success, .make-your-purchase-button {
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: fit-content;
     color: white;
     background-color: rgb(222, 66, 26);
     padding: 5px 15px;
@@ -582,6 +586,7 @@ outline: none;
     margin: 0 auto;
     text-align: center;
     max-width: 20%;
+    
 
 }
   
@@ -815,3 +820,78 @@ form {
     padding: 10px;
     border-radius: 20px;
   }
+
+
+
+
+
+
+
+
+
+
+  /* Your Cart Page 1*/
+
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(222, 66, 26);
+    min-width: 100px;
+    max-width: 90%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 200px;
+  }
+  
+  .empty-cart-text {
+    font-size: 0.8em;
+  }
+
+  
+
+#in-your-cart-card {
+    display: grid;
+    grid-template-rows: repeat(12);
+    border: 2px solid rgb(222, 66, 26);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    min-height: 300px; 
+    align-content: center;
+    padding: 15px;
+}
+
+.in-cart-header {
+    background-color: rgb(222, 66, 26);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    margin: 0 auto;
+
+      }
+
+.game-in-cart {
+    min-height: 20px;
+    border: 2px solid rgb(222, 66, 26);
+    border-radius: 10px;
+    background-color: rgb(222, 66, 26,00.5);
+
+}
+
+.sales-tax {
+    min-height: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 90%;
+}
+
+.make-your-purchase-button {
+    padding: 10px;
+}
