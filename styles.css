@@ -907,3 +907,54 @@ form {
     margin-bottom: 15px;
 }
 }
+
+
+
+
+
+
+
+/* Checkout Page */
+
+.select-payment-method {
+    font-size: 1.2em;
+}
+
+.card-payment-select {
+    border: 2px solid rgb(222, 66, 26);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .card-symbol {
+    max-width: 50px;
+    padding: 10px;
+  }
+
+  .paypal-symbol {
+    max-width: 40px;
+    padding: 10px;
+  }
+
+.paypal-bar {
+    max-width: 90%;
+    margin: 0 auto;
+    align-self: center;
+    margin-bottom: 20px;
+    max-height: 50px;
+}
+
+.checkout-summary {
+    background-color: rgb(222, 66, 26);
+}
+
+.make-your-purchase-button {
+    padding: 15px 30px;
+   
+    
+    
+}
+

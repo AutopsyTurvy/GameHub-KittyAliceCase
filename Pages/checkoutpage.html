@@ -79,29 +79,34 @@
 
             <main class="main-body-container">
                 <h3>Your cart:</h3>
-               
-
-                <div class="cart-page-elements">
-                  <section class="empty-cart">
-                    <img class="empty-cart-icon" src="/Images/carticon.png">
-                    <p class="empty-cart-text">Your cart is currently empty.</p>
-                  </section>
-
+                
                   
                     <div id="in-your-cart-card">
-                        <h3 class="in-cart-header">In Your Cart:</h3>
-                        <p>Your Game:</p>
-                        <input type="text" placeholder="Your Game" />
+                        <h3 class="select-payment-method">Select Payment Method:</h3>
 
-                        <label for="expansion-pack">Any Expansion Packs?:</label>
-                        <input type="checkbox" id="expansion-pack" name="expansion-pack">
+                        <section class="card-payment-select">
+                            <img class="card-symbol" src="/Images/Card Symbol.png">
+                            <label for="card-payment-checkbox">Card:</label>
+                            <input type="checkbox" id="card-payment-checkbox">
+                          </section>
+                          
+                          <section class="card-payment-select">
+                            <img class="paypal-symbol" src="/Images/PayPal Vector.png">
+                            <label for="paypal-payment-checkbox">PayPal:</label>
+                            <input type="checkbox" id="paypal-payment-checkbox">
+                          </section>
 
-                        <p>(This is a digital download, no shipping required.)</p>
 
-                        <div class="sales-tax">
-                            Sales Tax: 
-                            <input type="text" placeholder="" />
-                        </div>
+                        <img class="paypal-bar" src="/Images/bellroy_checkout_c79d42955f 2.png">
+
+
+                        <textarea id="checkout-summary" placeholder="Order Summary:
+                        
+
+                        Your Games:
+
+                        Tax:"></textarea>
+
 
                         <div class="total">
                             Sales Tax: 
@@ -136,7 +141,7 @@
 
        
     </div>  
-  </div>
+ 
             
  
         </header>
