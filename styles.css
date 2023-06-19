@@ -482,9 +482,11 @@ outline: none;
 
 #footer >a{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     height: 100%;
     font-size: 1em;
+    align-items: center;
+    align-content: center;
 
 }
 
