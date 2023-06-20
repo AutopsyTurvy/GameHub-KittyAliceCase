@@ -612,7 +612,7 @@ header#main nav ul li a {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     color: white;
-    background-color: rgb(222, 66, 26);
+    background-color: #BF2800;
     padding: 10px;
     margin: 5px;
     border-radius: 20px;
