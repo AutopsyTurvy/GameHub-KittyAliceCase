@@ -82,7 +82,8 @@ header#main {
     padding: 15px;
     margin: 0 auto;
     background-color: black;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     justify-content: center;
     background-image: url(./Images/8bit.jpg);
     background-color: rgb(30, 48, 62);
@@ -119,7 +120,7 @@ header#main a#logo {
     z-index: 20;
 }
 
-/* navigation bar */
+/* navigation bar for wider screens */
 
 header#main nav {
     height: 38px;
@@ -165,122 +166,83 @@ header#main nav ul li a {
 }  
 }
 
-/* navigation links */
-/* navigation links */
 
 
-#drop-section {
-    padding: 0.5em;
+/* hamburger menu */
+
+.hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     background-color: rgb(222, 66, 26);
-    max-height: fit-content;
-    
-}
-
-
-#drop-section > h1, 
-#drop-section > #expand-menu {
+  }
+  
+  .hamburger-icon {
+    cursor: pointer;
     display: inline-block;
-}
-
-
-#drop-section > #expand-menu {
-    background-image: url(/Images/dropdownicon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0.8em 1em;
-    background-color: transparent;
-    border: 2px solid rgba(0,0,0,0.3);
-    border-radius: 3px;
-    outline: none;
-    float: right;
-    
-}
-
-
-#drop-section > #expand-menu:focus ~ nav,
-#drop-section > #expand-menu:focus ~ nav {
+    padding: 10px;
+    order: 2;
+  }
+  
+  .hamburger-icon span {
     display: block;
-}
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+  }
 
-#drop-section > #expand-menu:focus,
-#drop-section > #expand-menu:active {
-    pointer-events: none;
-}
-
-#drop-section nav {
+  .hamburger-menu input[type="checkbox"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  .menu-items {
     display: none;
-    margin: -0.5em;
-    background-color: rgba(0,0,0,0.2);
-}
-
-#drop-section ul {
-    padding-left: 0;
-    margin-bottom: 0;
-    border-bottom: 3px solid rgba(0,0,0,0.2);
-}
-
-#drop-section ul li {
-    list-style: none;
-}
-
-#drop-section ul li a {
-    display: block;
-    padding: 0.5em 0.8em;
-    color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-items li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-items a {
     text-decoration: none;
-}
+    color: white;
+  }
+  
+  #hamburger-toggle:checked ~ .menu-items {
+    display: block;
+  }
 
-#drop-section ul li:hover a {
-    background-color: rgba(0,0,0,0.2);
-}
-
-
-/*#homebutton,
-#gamesbutton,
-#aboutbutton,
-#contactbutton,
-#cartbutton{
-    display: none;
-}
-
-#dropdownicon {
-    display: grid;
-    height: 15px;
+  .menu-items a img {
+  width: 16px; 
+  height: 16px;
+  margin-right: 5px;
 }
 
 
-header#main nav #button >drop-down-menu{
-display: grid;
-background-image: url(/Images/dropdownicon.png);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-padding: 0.8em 1em;
-background-color: transparent;
-border: 2px solid rgba(0,0,0,0.3);
-border-radius: 3px;
-outline: none;
-}
+  @media screen and (min-width: 650px) {
 
-
-@media (min-width: 769px) {
-    #dropdownicon {
+    .hamburger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: rgb(222, 66, 26);
         display: none;
-    }
 
-    #homebutton,
-    #gamesbutton,
-    #aboutbutton,
-    #contactbutton,
-    #cartbutton {
-        display: block;
-    }
-} /*
+      }
+}
+
+
 
 
 
 /* welcome */
+
 #welcome {
     display: block;
     margin: 0 auto;
@@ -428,14 +390,21 @@ outline: none;
     margin: 30px;
 }
 
+
+
+
+
 .centergame {
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    border: 2px solid rgb(222, 66, 26);
-    border-radius: 20px;
     max-width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    padding: 0;
+    border: 2px solid rgb(222, 66, 26);
+    overflow: hidden;
 }
 
 
