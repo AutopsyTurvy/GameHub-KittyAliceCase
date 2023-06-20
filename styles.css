@@ -585,6 +585,7 @@ header#main nav ul li a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     max-width: 70%;
     margin: 0 auto;
+    font-weight: 600;
 
 }
 
