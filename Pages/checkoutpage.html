@@ -68,20 +68,20 @@
           </nav>
 
             <main class="main-body-container">
-                <h3>Checkout:</h3>
+                <h1>Checkout:</h1>
                 
                   
                     <div id="in-your-cart-card">
-                        <h3 class="select-payment-method">Select Payment Method:</h3>
+                        <h2 class="select-payment-method">Select Payment Method:</h2>
 
                         <section class="payment-select">
-                            <img class="card-symbol" src="/Images/Card Symbol.png">
+                            <img class="card-symbol" src="/Images/Card Symbol.png" alt="Card Payment Icon">
                             <label for="card-payment-checkbox">Card:</label>
                             <input type="checkbox" id="card-payment-checkbox" alt="Check here to pay by card.">
                           </section>
                           
                           <section class="payment-select">
-                            <img class="paypal-symbol" src="/Images/PayPal Vector.png">
+                            <img class="paypal-symbol" src="/Images/PayPal Vector.png" alt="Paypal Icon">
                             <label for="paypal-payment-checkbox">PayPal:</label>
                             <input type="checkbox" id="paypal-payment-checkbox" alt="Check here to pay via Paypal.">
                           </section>
@@ -89,11 +89,10 @@
 
                         <img class="paypal-bar" src="/Images/bellroy_checkout_c79d42955f 2.png" alt="We process via paypal!">
 
-
-                        <textarea class="checkout-summary" placeholder="Order Summary:
-                        Your Games:
-                        Tax:"></textarea>
-
+                        <label for="checkout-summary">Order Summary:</label>
+                        
+                        
+                        <textarea id="checkout-summary" class="checkout-summary" placeholder="Your Games:&#10;Tax:&#10;Your Total:"></textarea>
 
 
             <a class="make-your-purchase-button" href="/Pages/processing.html">Complete your purchase</a>
