@@ -81,14 +81,11 @@ header#main {
     max-width: 100%;
     padding: 15px;
     margin: 0 auto;
-    border: 2px solid rgb(222, 66, 26);
     background-color: black;
     border-radius: 20px;
     justify-content: center;
     background-image: url(./Images/8bit.jpg);
     background-color: rgb(30, 48, 62);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     height: 120px;
     position: relative;
     overflow: hidden;
@@ -131,8 +128,6 @@ header#main nav {
     color: white;
     font-size: larger;
     padding-bottom: 6px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 0px;
 }
 
 header#main nav ul {
@@ -154,11 +149,94 @@ header#main nav ul li a {
     text-transform: uppercase;
 }
 
+
+@media screen and (max-width: 650px) {
+
+    header#main nav {
+    height: 38px;
+    padding-top: 2px;
+    margin-top: -38px;
+    color: white;
+    font-size: larger;
+    padding-bottom: 6px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: none;
+}  
+}
+
 /* navigation links */
 /* navigation links */
 
 
-#homebutton,
+#drop-section {
+    padding: 0.5em;
+    background-color: rgb(222, 66, 26);
+    max-height: fit-content;
+    
+}
+
+
+#drop-section > h1, 
+#drop-section > #expand-menu {
+    display: inline-block;
+}
+
+
+#drop-section > #expand-menu {
+    background-image: url(/Images/dropdownicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.8em 1em;
+    background-color: transparent;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    outline: none;
+    float: right;
+    
+}
+
+
+#drop-section > #expand-menu:focus ~ nav,
+#drop-section > #expand-menu:focus ~ nav {
+    display: block;
+}
+
+#drop-section > #expand-menu:focus,
+#drop-section > #expand-menu:active {
+    pointer-events: none;
+}
+
+#drop-section nav {
+    display: none;
+    margin: -0.5em;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#drop-section ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+}
+
+#drop-section ul li {
+    list-style: none;
+}
+
+#drop-section ul li a {
+    display: block;
+    padding: 0.5em 0.8em;
+    color: #fff;
+    text-decoration: none;
+}
+
+#drop-section ul li:hover a {
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+/*#homebutton,
 #gamesbutton,
 #aboutbutton,
 #contactbutton,
@@ -198,7 +276,7 @@ outline: none;
     #cartbutton {
         display: block;
     }
-}
+} /*
 
 
 
