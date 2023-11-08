@@ -76,6 +76,68 @@ p {
 }
 
 
+/*JavaScript styles*/
+
+api-game-container {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px; 
+    margin: 10px; 
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    width: 10%;
+    flex-direction: row;
+
+  }
+
+
+  @media (max-width: 768px) {
+    api-game-container {
+      flex-direction: column; 
+      width: 100%; 
+    }
+  }
+
+
+  
+  .api-game-container a {
+    text-decoration: none;
+    color: #333;
+    width: 100%; 
+  }
+
+  .api-image img {
+
+    max-width: 90%; 
+    display: flex;
+    margin: 0 auto;
+
+  }
+  
+
+  .api-game-container h2 {
+    margin: 10px 0; 
+    font-size: 1.2rem;
+  }
+  
+  
+  .api-game-container p {
+    margin: 10px 0; 
+    font-size: 1rem; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 /*Header Section*/
 
 header#main {

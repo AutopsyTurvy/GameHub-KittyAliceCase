@@ -15,9 +15,9 @@ async function fetchData() {
     var element = document.getElementById("products");
     for(var i = 0; i < data.length; i++) {
       element.innerHTML += `
-        <article>
+        <article id="api-game-container">
           <a href="product.html?id=${data[i].id}">
-            <img src="${data[i].image}">
+            <img id="api-image" src="${data[i].image}">
             <h2>${data[i].title}</h2>
             <p>${data[i].description}</p>
           </a>
