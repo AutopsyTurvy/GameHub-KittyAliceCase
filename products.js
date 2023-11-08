@@ -12,7 +12,6 @@ async function fetchData() {
     console.log(data);
 
     
-
     var element = document.getElementById("products");
     for(var i = 0; i < data.length; i++) {
       element.innerHTML += `
