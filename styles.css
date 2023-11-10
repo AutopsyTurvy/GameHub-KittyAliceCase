@@ -76,67 +76,6 @@ p {
 }
 
 
-/*JavaScript styles*/
-
-api-game-container {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    padding: 20px; 
-    margin: 10px; 
-    display: flex;
-    flex-direction: column; 
-    text-align: center;
-    width: 10%;
-    flex-direction: row;
-
-  }
-
-
-  @media (max-width: 768px) {
-    api-game-container {
-      flex-direction: column; 
-      width: 100%; 
-    }
-  }
-
-
-  
-  .api-game-container a {
-    text-decoration: none;
-    color: #333;
-    width: 100%; 
-  }
-
-  .api-image img {
-
-    max-width: 90%; 
-    display: flex;
-    margin: 0 auto;
-
-  }
-  
-
-  .api-game-container h2 {
-    margin: 10px 0; 
-    font-size: 1.2rem;
-  }
-  
-  
-  .api-game-container p {
-    margin: 10px 0; 
-    font-size: 1rem; 
-  }
-
-
-
-
-
-
-
-
-
-
-
 
 /*Header Section*/
 
@@ -183,6 +122,13 @@ header#main a#logo {
     z-index: 20;
 }
 
+
+
+
+
+
+
+
 /* navigation bar for wider screens */
 
 header#main nav {
@@ -228,6 +174,11 @@ header#main nav ul li a {
     display: none;
 }  
 }
+
+
+
+
+
 
 
 
@@ -288,16 +239,14 @@ header#main nav ul li a {
 }
 
 
-  @media screen and (min-width: 650px) {
-
+@media screen and (min-width: 650px) {
     .hamburger-menu {
         display: flex;
         align-items: center;
         justify-content: flex-end;
         background-color: rgb(222, 66, 26);
         display: none;
-
-      }
+    }
 }
 
 
@@ -316,258 +265,100 @@ header#main nav ul li a {
 }
 
 
-/* drifting images under header*/
+/*JavaScript styles*/
 
-#popular {
-    background-image: url(Images/controller72dpi.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    overflow: hidden;
+
+#products {
     display: grid;
-    gap: 15px;
-    padding: 15px;
-    grid-template-columns: 100%;
-    border: 2px solid rgb(222, 66, 26);
-    border-radius: 20px;
-    margin: 0 auto;
-    max-width: 90%;
-    color: white;
-    background-color: rgba(222, 66, 26, 0.3);
-}
-
-#popular h2 {
-    grid-column: 1;
-    margin: 0 auto;
-    padding-top: 20px;
-    margin-bottom: 1em;
-}
-
-#popular article {
-    padding: 10px;
-    border-radius: 20px;
-    padding: 0;
-    border: 2px solid rgb(222, 66, 26);
-    overflow: hidden;
-}
-
-#popular article a {
-    position: relative;
-    display: block;
-    padding-top: 90%;
-}
-
-#popular article a img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 1s ease-out;
-}
-
-#popular article a:hover img {
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
-    transition: all 1s ease-in;
-}
-
-
-
-
-@media screen and (max-width: 500px) {
-    #popular {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #popular h2 {
-        grid-column: 1 / 3;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    #popular {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    #popular h2 {
-        grid-column: 1 / 4;
-    }
-}
-
-@media screen and (min-width: 850px) {
-    #popular {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    #popular h2 {
-        grid-column: 1 / 5;
-    }
-}
-
-@media screen and (min-width: 900px) {
-
-}
-
-
-
-
-
-/* main body */
-
-.mainbodygamename {
-
-    color: white;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    font-size: larger;
-
-}
-
-.right-arrow,
-.left-arrow {
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border-top: 35px solid transparent;
-    border-bottom: 35px solid transparent;
-}
-
-.left-arrow {
-    left: 30px;
-    border-right: 35px solid rgb(222, 66, 26);
-}
-
-.right-arrow {
-    right: 30px;
-    border-left: 35px solid rgb(222, 66, 26);
-}
-
-.arrow-container {
-    position: relative;
-    margin: 30px;
-}
-
-
-
-
-
-.centergame {
-    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    max-width: 80%;
-    padding: 10px;
+}
+
+
+article {
+    background-color: rgb(222, 66, 26);
+    border: 3px solid #ccc;
     border-radius: 20px;
-    padding: 0;
-    border: 2px solid rgb(222, 66, 26);
-    overflow: hidden;
+    padding: 15px; 
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+   
 }
 
 
 
+  article a {
+    text-decoration: none;
+    color: #333;
+    width: 100%; 
+  }
 
-/*browse our other games*/
 
-#othergames {
-    background-image: url(Images/laptop72dpi.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    overflow: hidden;
-    display: grid;
-    gap: 15px;
-    padding: 15px;
-    grid-template-columns: 100%;
-    border: 2px solid rgb(222, 66, 26);
-    border-radius: 20px;
+  article img {
+
+    max-width: 90%; 
+    display: flex;
     margin: 0 auto;
-    max-width: 90%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+
+
+  article h2 {
+    margin: 5px 0; 
+    font-size: 1.4rem;
+  }
+  
+  
+  article p {
+    margin: 5px 0; 
+    font-size: 1rem; 
+  }
+
+  article .extra-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    
+  }
+
+
+
+  #buyButton {
+    background-color: #40A434;
     color: white;
-    background-color: rgba(222, 66, 26, 0.3);
-}
-
-.other-games-title {
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90%;
     margin: 0 auto;
-    grid-column: 1;
-    padding-left: 20px;
-    font-size: 1.2em;
-    display: grid;
+  }
 
+  [id^="buyButton"] {
+    background-color: #40A434;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90%;
 }
-
-
-#othergames article {
-    padding: 10px;
-    border-radius: 20px;
-    padding: 0;
-    border: 2px solid rgb(222, 66, 26);
-    overflow: hidden;
-}
-
-#othergames article a {
-    position: relative;
-    display: block;
-    padding-top: 90%;
-}
-
-#othergames article a img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 1s ease-out;
-}
-
-#othergames article a:hover img {
-    position: absolute;
-    top: -5%;
-    left: -5%;
-    width: 110%;
-    height: 110%;
-    transition: all 1s ease-in;
-}
-
-
-
-
-@media screen and (max-width: 500px) {
-    #othergames {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .other-games-title {
-        grid-column: 1 / 3;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    #othergames {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .other-games-title {
-        grid-column: 1 / 4;
-    }
-}
-
-@media screen and (min-width: 850px) {
-    #othergames {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .other-games-title {
-        grid-column: 1 / 5;
-    }
-}
-
+  
 
 
 
