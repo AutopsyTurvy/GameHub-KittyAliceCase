@@ -47,7 +47,7 @@ element.innerHTML = `
       <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
 
       <p>Date of Release: ${data.released}</p>
-      <a href="./Pages/checkoutpage.html" id="buyButton" class="add-to-cart-link">Add to Cart!</a>
+      <a href="./Pages/yourcart.html" id="buyButton" class="add-to-cart-link">Add to Cart!</a>
   </article>
 `;
 
