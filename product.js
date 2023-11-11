@@ -11,23 +11,45 @@ async function fetchData() {
 
       const data = await response.json();
 
-      // Check for specific conditions and handle errors
       if (!data || typeof data !== 'object') {
           throw new Error('Invalid data received from the server.');
       }
 
       var element = document.getElementById("product");
 
-      element.innerHTML = `
-          <article id="api-game-container">
-              <img src="${data.image}">
-              <h2>${data.title}</h2>
-              <p>${data.description}</p>
-              <p>Genre: ${data.genre}</p>
-              <p>Date of Release: ${data.released}</p>
-              <button id="buyButton">Buy Now</button>
-          </article>
-      `;
+      const isOnSale = data.onSale;
+    const displayedPrice = isOnSale ? data.discountedPrice : data.price;
+
+
+    const priceText = isOnSale
+  ? `This item is on sale! Discounted price is: $${data.discountedPrice}`
+  : `Price: ${data.price}`;
+
+
+
+
+  const exchangeRate = 11.11;
+
+  const priceInKroner = displayedPrice * exchangeRate;
+
+
+element.innerHTML = `
+  <article id="api-game-container">
+      <img src="${data.image}">
+      <h2>${data.title}</h2>
+      <p>${data.description}</p>
+
+      <div class="details-container">
+          <p class="age-rating">Age Rating: ${data.ageRating}</p>
+          <p>Genre: ${data.genre}</p>
+      </div>
+
+      <p>${priceText} / ${priceInKroner.toFixed(2)} Kroner</p>
+
+      <p>Date of Release: ${data.released}</p>
+      <button id="buyButton">Buy Now</button>
+  </article>
+`;
 
       var buyButton = document.getElementById("buyButton");
       buyButton.addEventListener("click", function() {

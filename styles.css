@@ -27,7 +27,7 @@ h5 {
     font-weight: 500;
     color: white;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.8em;
     text-align: center;
 }
@@ -45,7 +45,6 @@ div {
 p {
     font-family: "Play", Arial, sans-serif;
     color: white;
-    padding: 20px;
     margin: 0 auto;
     font-size: 0.8em;
     text-align: center;
@@ -309,13 +308,14 @@ article {
 
 
   article h2 {
-    margin: 5px 0; 
+    margin: 8px 0; 
     font-size: 1.4rem;
+    text-decoration: underline;
   }
   
   
   article p {
-    margin: 5px 0; 
+    margin: 8px 0; 
     font-size: 1rem; 
   }
 
@@ -327,6 +327,18 @@ article {
     margin-top: 5px;
     
   }
+
+
+
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid white;
+
+}
+
+
 
 
 
@@ -360,6 +372,11 @@ article {
 }
   
 
+
+
+.age-rating {
+    font-weight: bold;   
+}
 
 
 
