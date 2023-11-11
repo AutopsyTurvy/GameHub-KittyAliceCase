@@ -356,6 +356,23 @@ article {
     margin: 0 auto;
   }
 
+  .submit-email-button {
+
+    background-color: #40A434;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
   [id^="buyButton"] {
     background-color: #40A434;
     color: white;
@@ -369,6 +386,8 @@ article {
     border-radius: 5px;
     width: 90%;
 }
+
+
   
 
 
