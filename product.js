@@ -39,12 +39,12 @@ element.innerHTML = `
       <h2>${data.title}</h2>
       <p>${data.description}</p>
 
-      <div class="details-container">
-          <p class="age-rating">Age Rating: ${data.ageRating}</p>
-          <p>Genre: ${data.genre}</p>
-      </div>
+  <div class="genreandagerating">
+      <p>Genre: ${data.genre}</p>
+      <p>Age Rating: ${data.ageRating}</p>
+  </div>
 
-      <p>${priceText} / ${priceInKroner.toFixed(2)} Kroner</p>
+      <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
 
       <p>Date of Release: ${data.released}</p>
       <button id="buyButton">Buy Now</button>
