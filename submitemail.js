@@ -1,5 +1,6 @@
-const form = document.querySelector(emailform);
+const form = document.querySelector("#emailform");
+form.onsubmit = function(event) {
+    event.preventDefault();
  
-form.onsubmit = function() {
     console.log(event);
 };
