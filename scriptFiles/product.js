@@ -1,10 +1,14 @@
+//Product.js - The Product details
+
 const searchParams = new URLSearchParams(window.location.search);
 const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
+
 async function fetchData() {
   try {
-      const response = await fetch(`${baseUrl}/${searchParams.get('id')}`);
 
+
+      const response = await fetch(`${baseUrl}/${searchParams.get('id')}`);
       if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -29,7 +33,6 @@ async function fetchData() {
 
 
   const exchangeRate = 11.11;
-
   const priceInKroner = displayedPrice * exchangeRate;
 
 
@@ -51,17 +54,20 @@ element.innerHTML = `
   </article>
 `;
 
-      var buyButton = document.getElementById("buyButton");
-      buyButton.addEventListener("click", function() {
-      });
 
-  } catch (error) {
 
-      if (error instanceof TypeError) {
-          console.error('There was a network error or the server did not respond.');
-      } else {
-          console.error(error.message);
-      }
+ var buyButton = document.getElementById("buyButton");
+    buyButton.addEventListener("click", function() {
+});
+
+
+
+} catch (error) {
+    console.error("An error occurred:", error.message);
+
+    var element = document.getElementById("product");
+    const errorId = "singleProductError";
+    element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
   }
 }
 

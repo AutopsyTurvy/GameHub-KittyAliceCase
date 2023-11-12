@@ -337,7 +337,34 @@ article {
 
 }
 
+body .error-container {
+    margin: 0;
 
+
+}
+
+body .api-error-message {
+    color: red;
+    margin: 0 auto;
+    border: 2px solid red;
+    background-color: rgba(225, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 50%; 
+  }
+
+
+  .singleProductError {
+    color: white;
+    margin: 0 auto;
+    border: 2px solid white;
+    background-color: rgba(#ffffff, 0, 0, 0.1);
+    padding: 1em;
+    text-align: center;
+    width: 50%; 
+    margin-top: 2em; 
+
+  }
 
 
 
@@ -388,10 +415,6 @@ article {
 }
 
 
-  
-
-
-
 .age-rating {
     font-weight: bold;   
 }
@@ -400,8 +423,23 @@ article {
     display: flex;
     justify-content: space-between;
     border: 2px solid white;
-    
 }
+
+
+#loading {
+    border: 8px solid rgb(222, 66, 26);
+    border-top: 8px solid #40A434;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 
 
