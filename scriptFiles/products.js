@@ -26,6 +26,9 @@ async function fetchData() {
 
       data.forEach((item, i) => addEventListenerToBuyButton(`buyButton${i}`, item.id));
     }
+
+
+
   } catch (error) {
     console.error("An error occurred:", error.stack);
     const errorMessageContainer = document.createElement("div");
@@ -38,17 +41,22 @@ async function fetchData() {
   }
 }
 
+
+
+
 function addEventListenerToBuyButton(buttonId, productId) {
 
   document.getElementById(buttonId).addEventListener("click", async () => {
-    showLoading();
     await new Promise(resolve => setTimeout(resolve, 3000));
     window.location.href = `product.html?id=${productId}`;
 });
 }
 
+
+
 function showLoading() {
   document.getElementById("loading").style.display = "block";
 }
+showLoading();
 
 fetchData();
