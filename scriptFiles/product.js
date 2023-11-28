@@ -38,34 +38,16 @@ function fetchData() {
         <p>Date of Release: ${data.released}</p>
         <a href="#" id="addToCartButton-${data.id}" class="add-to-cart-link">Add to Cart!</a>
       `;
-
-      document.getElementById(`addToCartButton-${data.id}`)
-        .addEventListener("click", (e) => {
-          addProductToCart(data.id);
-          addNumberOfItemsToCartIcon();
-          e.preventDefault();
-          return false;
-        });
     })
-    .catch(error => {
+    /*.catch(error => {
       console.error("An error occurred:", error.message);
 
       var element = document.getElementById("product");
       const errorId = "singleProductError";
       element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
-    });
+    });*/
 
-  document.getElementById("loading").style.display = "none";
+  //document.getElementById("loading").style.display = "none";
 }
 
-function addProductToCart(id) {
-  if(localStorage.getItem("cart") === null) {
-    localStorage.setItem("cart", id);
-  } else {
-      var cart = localStorage.getItem("cart").split(",");
-      cart.push(id);
-      localStorage.setItem("cart", cart.join(","));
-  }
-}
-
-fetchData();
+fetchData(); 
