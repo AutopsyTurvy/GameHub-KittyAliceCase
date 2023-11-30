@@ -54,7 +54,7 @@ function fetchData() {
       element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
     });*/
 
-  //document.getElementById("loading").style.display = "none";
+  document.getElementById("loading").style.display = "none";
 }
 
 fetchData(); 
