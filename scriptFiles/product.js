@@ -68,6 +68,16 @@ function fetchData() {
   document.getElementById("loading").style.display = "none";
 }
 
+function addProductToCart(id) {
+  if(localStorage.getItem("cart") === null) {
+    localStorage.setItem("cart", id);
+  } else {
+      var cart = localStorage.getItem("cart").split(",");
+      cart.push(id);
+      localStorage.setItem("cart", cart.join(","));
+  }
+  
 
+}
 
 fetchData(); 
