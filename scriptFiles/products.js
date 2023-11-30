@@ -3,6 +3,7 @@ const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 const element = document.getElementById("products");
 
 async function fetchData() {
+  document.getElementById("loading").style.display = "block";
   
   try {
     const response = await fetch(baseUrl);
@@ -34,6 +35,7 @@ async function fetchData() {
     errorMessageContainer.className = "error-container";
     element.appendChild(errorMessageContainer);
   }
+  document.getElementById("loading").style.display = "none";
 }
 
 fetchData();
