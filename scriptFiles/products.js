@@ -9,7 +9,7 @@ async function fetchData() {
     const data = await response.json();
 
     if (data.length === 0) {
-      element.innerHTML = "<p>Oh no! No data to fetch in the API!</p>";
+      element.innerHTML = "<p>Oh no! There was an error while we were fetching data! Please try again later!</p>";
     } else {
       element.innerHTML = data.map(item => `
         <article id="api-game-container">
