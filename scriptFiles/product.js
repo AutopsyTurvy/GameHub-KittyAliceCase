@@ -43,14 +43,16 @@ function fetchData() {
         <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
 
         <p>Date of Release: ${data.released}</p>
-        
         <a href="#" id="addToCartButton-${data.id}" class="add-to-cart-link">Add to Cart!</a>
       `;
 
-      var buyButton = document.getElementById("buyButton");
-      buyButton.addEventListener("click", function() {
-          console.log("Buy button clicked!");
-      });
+      document.getElementById(`addToCartButton-${data.id}`)
+        .addEventListener("click", (e) => {
+          addProductToCart(data.id);
+          addNumberOfItemsToCartIcon();
+          e.preventDefault();
+          return false;
+        });
 
 
     })
