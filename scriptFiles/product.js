@@ -56,7 +56,8 @@ function fetchData() {
 
 
     })
-    /*.catch(error => {
+    /*
+    .catch(error => {
       console.error("An error occurred:", error.message);
 
       var element = document.getElementById("product");
@@ -66,5 +67,7 @@ function fetchData() {
 
   document.getElementById("loading").style.display = "none";
 }
+
+
 
 fetchData(); 
