@@ -53,8 +53,6 @@ function fetchData() {
           e.preventDefault();
           return false;
         });
-
-
     })
     
     .catch(error => {
@@ -76,8 +74,6 @@ function addProductToCart(id) {
       cart.push(id);
       localStorage.setItem("cart", cart.join(","));
   }
-  
-
 }
 
 fetchData(); 
