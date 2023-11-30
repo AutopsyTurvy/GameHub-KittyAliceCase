@@ -6,7 +6,14 @@ const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 function fetchData() {
   document.getElementById("loading").style.display = "block";
 
-  const response = fetch(`${baseUrl}/${searchParams.get('id')}`)
+
+  
+  const gameId = searchParams.get('id');
+  const url = `${baseUrl}/${gameId}`; 
+
+
+
+  const response = fetch(url)
     .then(response => response.json())
     .then(data => {
       var element = document.getElementById("product");
