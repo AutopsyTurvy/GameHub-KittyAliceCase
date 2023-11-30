@@ -56,14 +56,14 @@ function fetchData() {
 
 
     })
-    /*
+    
     .catch(error => {
       console.error("An error occurred:", error.message);
 
       var element = document.getElementById("product");
       const errorId = "singleProductError";
       element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
-    });*/
+    });
 
   document.getElementById("loading").style.display = "none";
 }
