@@ -44,7 +44,9 @@ function fetchData() {
 
         <p>Date of Release: ${data.released}</p>
         <a href="#" id="addToCartButton-${data.id}" class="add-to-cart-link">Add to Cart!</a>
-      `;
+      
+      
+        `;
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {

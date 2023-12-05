@@ -594,6 +594,14 @@ body .api-error-message {
     height: 100%;   
 }
 
+.game-info-background {
+  border: 2px solid rgb(222, 66, 26);
+  border-radius: 20px;
+  background-image: url(../Images/controllerimage.jpg);
+  background-position: center;
+  height: 100%;   
+}
+
 .about-us-images {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -832,7 +840,36 @@ form {
     background-color: rgba(0, 0, 0, 0.5);
     min-height: 200px;
   }
+
+
+  .cart-item-image {
+    max-width: 8em; 
+    max-height: 8em; 
+    margin-left: 2em;
+    width: auto;
+    height: auto;
+  }
+
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+  }
   
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  
+  .cart-item-details h3 {
+    font-size: 14px;
+  }
+  
+  .cart-item-details p {
+    font-size: 12px;
+  }
+
+
+
   .empty-cart-text {
     font-size: 0.8em;
   }
