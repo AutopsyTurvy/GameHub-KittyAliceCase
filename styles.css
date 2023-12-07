@@ -969,7 +969,7 @@ justify-content:center;
 align-items: center;
 width: fit-content;
 color: white;
-background-color: #BF2800;
+background-color:rgb(222, 66, 26);
 padding: 5px 15px;
 border-radius: 20px;
 margin: 0 auto;
@@ -978,6 +978,9 @@ max-width: 20%;
 cursor: pointer;
 }
 
+.make-your-purchase-button {
+background-color: #BF2800;
+}
 
 @media screen and (min-width: 750px) {
 .cart-page-elements {
