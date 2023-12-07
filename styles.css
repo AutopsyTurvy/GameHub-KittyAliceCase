@@ -640,7 +640,15 @@ h3 {
     height: 100%;   
 }
 
-
+.game-info-background {
+  border: 2px solid rgb(222, 66, 26);
+  border-radius: 20px;
+  background-image: url(./Images/controllerimage.jpg);
+  background-position: center;
+  height: 100vh;   
+  display: flex;
+  flex-direction: column;
+}
 
 .about-us-images {
     display: grid;
@@ -883,24 +891,24 @@ form {
   }
 
 
-  .main-body-container {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-grow: 1;
-  }
-  
-  .cart-page-elements {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cart-container {
-    /* Optional: Add styles to customize the appearance of the cart container */
-    flex-grow: 1; /* Allow the cart container to grow and take available space */
-    overflow-y: auto; /* Add a vertical scrollbar if needed */
-  }
+.main-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.cart-page-elements {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-container {
+  /* Optional: Add styles to customize the appearance of the cart container */
+  flex-grow: 1; /* Allow the cart container to grow and take available space */
+  overflow-y: auto; /* Add a vertical scrollbar if needed */
+}
 
 
 
