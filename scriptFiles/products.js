@@ -3,8 +3,6 @@ const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 const element = document.getElementById("products");
 
 async function fetchData() {
-
-  
   try {
     const response = await fetch(baseUrl);
     const data = await response.json();
@@ -20,6 +18,7 @@ async function fetchData() {
             <div class="extra-info">
               <p>Genre: ${item.genre}</p>
               <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
+              <a href="#" id="addToCartButton-${item.id}" class="add-to-cart-link">Add to Cart!</a> <!-- Add this line -->
             </div>
           </a>
         </article>

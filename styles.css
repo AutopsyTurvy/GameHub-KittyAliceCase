@@ -969,6 +969,7 @@ justify-content:center;
 align-items: center;
 width: fit-content;
 color: white;
+border: 2px solid white;
 background-color:rgb(222, 66, 26);
 padding: 5px 15px;
 border-radius: 20px;
@@ -978,7 +979,7 @@ max-width: 20%;
 cursor: pointer;
 }
 
-.make-your-purchase-button {
+.make-your-purchase-button:hover {
 background-color: #BF2800;
 }
 
