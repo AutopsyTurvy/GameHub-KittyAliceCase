@@ -39,21 +39,21 @@ async function fetchData() {
 function addToCart(productIdToAdd) {
   var cart = localStorage.getItem("cart");
 
-  // Check if the product ID to add is already in the cart
+ 
   if (cart !== null && cart.trim() !== "") {
     var existingItems = cart.split(",");
     if (existingItems.includes(productIdToAdd)) {
-      // Product is already in the cart, do not add again
+    
       console.log("Product already in the cart");
       return;
     }
   }
 
-  // Add the new product ID to the cart
+
   var updatedCartItems = cart ? `${cart},${productIdToAdd}` : productIdToAdd;
   localStorage.setItem("cart", updatedCartItems);
 
-  // Update the cart icon with the new count
+
   addNumberOfItemsToCartIcon();
 }
 
