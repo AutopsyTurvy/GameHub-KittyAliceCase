@@ -69,12 +69,17 @@ function fetchData() {
 }
 
 function addProductToCart(id) {
-  if(localStorage.getItem("cart") === null) {
+  var cart = localStorage.getItem("cart");
+
+  if (cart === null) {
     localStorage.setItem("cart", id);
   } else {
-      var cart = localStorage.getItem("cart").split(",");
-      cart.push(id);
-      localStorage.setItem("cart", cart.join(","));
+    var cartItems = cart.split(",").map(itemId => itemId.trim());
+
+    if (!cartItems.includes(id)) {
+      cartItems.push(id);
+      localStorage.setItem("cart", cartItems.join(","));
+    }
   }
 }
 

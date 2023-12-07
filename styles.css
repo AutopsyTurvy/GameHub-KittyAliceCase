@@ -18,7 +18,7 @@ body {
 
 h1,
 h2,
-h3,
+
 h4,
 h5 {
 
@@ -414,6 +414,31 @@ body .api-error-message {
     width: 90%;
 }
 
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+
+.remove-item-button {
+  background-color: #40A434;
+  color: white;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.6em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0.2em;
+
+}
 
 .age-rating {
     font-weight: bold;   
@@ -551,14 +576,34 @@ body .api-error-message {
     
 }
 
-.singleplayericon {
-    max-width: 20px;
+.add-to-cart-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+  max-width: 80%;
+  margin: 0 auto;
 }
+
+.add-to-cart-link:hover {
+  background-color: #45a049;
+}
+
+
+.add-to-cart-link:link,
+.add-to-cart-link:visited {
+  color: #fff; 
+  text-decoration: none;
+}
+
+
 
 .purchasegamebutton,
  .email-us-button,
   .email-success,
-   .make-your-purchase-button,
     .purchase-complete-button {
 
     display: flex;
@@ -572,6 +617,7 @@ body .api-error-message {
     margin: 0 auto;
     text-align: center;
     max-width: 20%;
+    cursor: pointer;
     
 
 }
@@ -586,10 +632,10 @@ body .api-error-message {
 
 /* About Us Styles*/
 
-.about-us-wrapper, .game-info-background {
+.about-us-wrapper {
     border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
-    background-image: url(/Images/controllerimage.jpg);
+    background-image: url(./Images/controllerimage.jpg);
     background-position: center;
     height: 100%;   
 }
@@ -597,7 +643,7 @@ body .api-error-message {
 .game-info-background {
   border: 2px solid rgb(222, 66, 26);
   border-radius: 20px;
-  background-image: url(../Images/controllerimage.jpg);
+  background-image: url(./Images/controllerimage.jpg);
   background-position: center;
   height: 100%;   
 }
@@ -839,6 +885,7 @@ form {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     min-height: 200px;
+    padding: 0.5em;
   }
 
 
@@ -854,6 +901,7 @@ form {
   .cart-item {
     display: flex;
     align-items: center;
+    padding: 0.6em;
   }
   
   .cart-item-details {
@@ -861,7 +909,7 @@ form {
   }
   
   .cart-item-details h3 {
-    font-size: 14px;
+    font-size: 0.2em;
   }
   
   .cart-item-details p {
@@ -892,8 +940,7 @@ form {
 
 .in-cart-header {
     background-color: rgb(222, 66, 26);
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    border-radius: 18px;
     margin: 0 auto;
 
       }
@@ -916,19 +963,27 @@ form {
 }
 
 .make-your-purchase-button {
-    padding: 10px;
-    margin-bottom: 15px;
+display: flex;
+justify-content:center;
+align-items: center;
+width: fit-content;
+color: white;
+background-color: #BF2800;
+padding: 5px 15px;
+border-radius: 20px;
+margin: 0 auto;
+text-align: center;
+max-width: 20%;
+cursor: pointer;
 }
+
 
 @media screen and (min-width: 750px) {
 .cart-page-elements {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.make-your-purchase-button {
-    padding: 20px;
-    margin-bottom: 15px;
-}
+
 }
 
 

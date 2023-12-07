@@ -58,47 +58,34 @@
             </ul>
         </nav>
 
+        <div class="background-image"></div>
+
+
         <main class="main-body-container">
             <h1>Your cart:</h1>
 
             <div class="cart-page-elements">
                 <section class="empty-cart">
-
-                    
-                    <p class="empty-cart-text">
-                    </p>
+                    <p class="empty-cart-text"></p>
+                    <div id="cart-container"></div>
                 </section>
 
                 <section id="in-your-cart-card">
-                    <h2 class="in-cart-header">In Your Cart:</h2>
-                    <p>Your Game:</p>
-                    <input type="text" placeholder="Your Game"/>
+                    <h2 class="in-cart-header">Your Total:</h2>
 
-                    <label for="expansion-pack">Any Expansion Packs?:</label>
-                    <input type="checkbox" id="expansion-pack" name="expansion-pack">
+            
 
                     <p>(This is a digital download, no shipping required.)</p>
 
-                    <div class="sales-tax">
-                        <label for="sales-tax-input">Sales Tax:</label>
-                        <input type="text" id="sales-tax-input" placeholder="Enter sales tax">
-                    </div>
-
                     <div class="total">
                         <label for="total-input">Your Total:</label>
-                        <input type="text" id="total-input" placeholder="Enter total amount">
                     </div>
                 </section>
             </div>
 
-            <div id="cart-container"></div>
-
-            <div>
-              
-            </div>
+            <a class="make-your-purchase-button" href="checkoutpage.html">Complete your purchase</a>
         </main>
 
-        <a class="make-your-purchase-button" href="/Pages/checkoutpage.html">Complete your purchase</a>
 
         <footer id="footer">
             <div class="footer-links">
@@ -112,6 +99,5 @@
 
     <script src="../scriptFiles/cart.js"></script>
     <script src="../scriptFiles/product.js"></script>
-
 </body>
 </html>
