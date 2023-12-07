@@ -1,4 +1,5 @@
-//products.js
+// products.js
+
 const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 const element = document.getElementById("products");
 
@@ -15,12 +16,12 @@ async function fetchData() {
           <a href="./pages/product.html?id=${item.id}">
             <img id="api-image" src="${item.image}">
             <h2>${item.title}</h2>
-            <div class="extra-info">
-              <p>Genre: ${item.genre}</p>
-              <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
-              <button class="add-to-cart-button" onclick="addToCart('${item.id}')">Add to Cart</button>
-            </div>
           </a>
+          <div class="extra-info">
+            <p>Genre: ${item.genre}</p>
+            <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
+            <button class="add-to-cart-button" onclick="addToCart('${item.id}')">Add to Cart</button>
+          </div>
         </article>
       `).join('');
     }
@@ -39,22 +40,31 @@ async function fetchData() {
 function addToCart(productIdToAdd) {
   var cart = localStorage.getItem("cart");
 
- 
   if (cart !== null && cart.trim() !== "") {
     var existingItems = cart.split(",");
     if (existingItems.includes(productIdToAdd)) {
-    
       console.log("Product already in the cart");
       return;
     }
   }
 
-
   var updatedCartItems = cart ? `${cart},${productIdToAdd}` : productIdToAdd;
   localStorage.setItem("cart", updatedCartItems);
 
-
   addNumberOfItemsToCartIcon();
+}
+
+function addNumberOfItemsToCartIcon() {
+  var cartButton = document.getElementById("cartbutton");
+  var cartItems = localStorage.getItem("cart");
+
+  if (cartItems) {
+    cartItems = cartItems.split(",");
+    var cartItemsCount = cartItems.length;
+    cartButton.innerHTML = `cart (${cartItemsCount})`;
+  } else {
+    cartButton.innerHTML = `cart (0)`;
+  }
 }
 
 fetchData();
