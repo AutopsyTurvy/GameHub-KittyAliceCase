@@ -338,6 +338,33 @@ article {
 
 }
 
+
+
+
+
+
+
+.add-to-cart-button {
+  padding: 0.5em;
+  background-color: rgb(222, 66, 26);
+  color: white;
+  cursor: pointer;
+
+}
+
+.add-to-cart-button:hover {
+  padding: 0.5em;
+  background-color: #BF2800;
+  color: white;
+  cursor: pointer;
+  
+}
+
+
+
+
+
+
 body .error-container {
     margin: 0;
 
