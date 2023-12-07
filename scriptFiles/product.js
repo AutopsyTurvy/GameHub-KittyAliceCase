@@ -1,17 +1,15 @@
 //Product.js - The Product details
 
+//Product.js - The Product details
+
 const searchParams = new URLSearchParams(window.location.search);
-const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
+const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub"; // Change the variable name
 
 function fetchData() {
   document.getElementById("loading").style.display = "block";
 
-
-  
   const gameId = searchParams.get('id');
-  const url = `${baseUrl}/${gameId}`; 
-
-
+  const url = `${productBaseUrl}/${gameId}`; // Update the variable name
 
   const response = fetch(url)
     .then(response => response.json())
@@ -44,9 +42,7 @@ function fetchData() {
 
         <p>Date of Release: ${data.released}</p>
         <a href="#" id="addToCartButton-${data.id}" class="add-to-cart-link">Add to Cart!</a>
-      
-      
-        `;
+      `;
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {
@@ -56,7 +52,6 @@ function fetchData() {
           return false;
         });
     })
-    
     .catch(error => {
       console.error("An error occurred:", error.message);
 
@@ -83,4 +78,4 @@ function addProductToCart(id) {
   }
 }
 
-fetchData(); 
+fetchData();
