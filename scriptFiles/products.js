@@ -18,7 +18,7 @@ async function fetchData() {
             <div class="extra-info">
               <p>Genre: ${item.genre}</p>
               <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
-              <a href="#" id="addToCartButton-${item.id}" class="add-to-cart-link">Add to Cart!</a> <!-- Add this line -->
+              <button id="main-page-cart-button-${item.id}" class="buy-button">Add To Cart</button>
             </div>
           </a>
         </article>
