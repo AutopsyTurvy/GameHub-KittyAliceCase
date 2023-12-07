@@ -18,7 +18,7 @@ async function fetchData() {
             <div class="extra-info">
               <p>Genre: ${item.genre}</p>
               <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
-              <button class="add-to-cart-button" onclick="addToCart('${item.id}')">Add to Cart</button> <!-- Add this line -->
+              <button class="add-to-cart-button" onclick="addToCart('${item.id}')">Add to Cart</button>
             </div>
           </a>
         </article>
@@ -34,6 +34,27 @@ async function fetchData() {
     errorMessageContainer.className = "error-container";
     element.appendChild(errorMessageContainer);
   }
+}
+
+function addToCart(productIdToAdd) {
+  var cart = localStorage.getItem("cart");
+
+  // Check if the product ID to add is already in the cart
+  if (cart !== null && cart.trim() !== "") {
+    var existingItems = cart.split(",");
+    if (existingItems.includes(productIdToAdd)) {
+      // Product is already in the cart, do not add again
+      console.log("Product already in the cart");
+      return;
+    }
+  }
+
+  // Add the new product ID to the cart
+  var updatedCartItems = cart ? `${cart},${productIdToAdd}` : productIdToAdd;
+  localStorage.setItem("cart", updatedCartItems);
+
+  // Update the cart icon with the new count
+  addNumberOfItemsToCartIcon();
 }
 
 fetchData();
