@@ -448,6 +448,11 @@ body .api-error-message {
     width: 90%;
 }
 
+[id^="buyButton"]:hover {
+background-color: #2b7425;
+}
+
+
 .cart-item {
   display: flex;
   justify-content: space-between;
