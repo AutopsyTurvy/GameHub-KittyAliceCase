@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Open a new universe of games- The place to explore for competetive game experiences and prices.">
+    <meta name="description" content="Open a new universe of games- The place to explore for competitive game experiences and prices.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <title> GameHub - Checkout: </title>
+</head>
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-
-
-<link href="../styles.css" rel="stylesheet"> 
-<title> GameHub - Checkout: </title>
-
-    
-    <body>
-      <div class="game-info-background">
+<body>
+    <div class="game-info-background">
         <header id="main">
             <a id="logo" alt="Game Hub" title="/index.html">Home</a>
 
             <nav class="navigation">
                 <ul>
-                    <li>
-                        <a id="homebutton" href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a id="aboutbutton" href="aboutus.html">About</a>
-                    </li>
-                    <li>
-                        <a id="contactbutton" href="contactus.html">Contact</a>
-                    </li>
-                    <li>
-                        <a id="cartbutton" href="yourcart.html">Cart</a>
-                    </li>
+                    <li><a id="homebutton" href="./index.html">Home</a></li>
+                    <li><a id="aboutbutton" href="aboutus.html">About</a></li>
+                    <li><a id="contactbutton" href="contactus.html">Contact</a></li>
+                    <li><a id="cartbutton" href="yourcart.html">Cart</a></li>
                 </ul>
             </nav>
         </header>
@@ -57,58 +46,51 @@
                 <span></span>
             </label>
             <ul class="menu-items">
-                
                 <li><a href="/index.html"><img src="../Images/homeicon.png" alt="Home page">Home</a></li>
                 <li><a href="/Pages/aboutus.html"><img src="../Images/playericon.png" alt="About us">About</a></li>
                 <li><a href="/Pages/contactus.html"><img src="../Images/envelopeicon.png" alt="Contact us">Contact</a></li>
                 <li><a href="/Pages/yourcart.html"><img src="../Images/carticon.png" alt="Your cart">Cart</a></li>
             </ul>
-          </nav>
+        </nav>
 
-            <main class="main-body-container">
-                <h1>Checkout:</h1>
-                
-                  
-                    <div id="in-your-cart-card">
-                        <h2 class="select-payment-method">Select Payment Method:</h2>
+        <main class="main-body-container">
+            <h1>Checkout:</h1>
 
-                        <section class="payment-select">
-                            <img class="card-symbol" src="../Images/cardsymbol.png" title="Card Payment Icon">
-                            <label for="card-payment-checkbox">Card:</label>
-                            <input type="checkbox" id="card-payment-checkbox" alt="Check here to pay by card.">
-                          </section>
-                          
-                          <section class="payment-select">
-                            <img class="paypal-symbol" src="../Images/paypal-vector.png" title="Paypal Icon">
-                            <label for="paypal-payment-checkbox">PayPal:</label>
-                            <input type="checkbox" id="paypal-payment-checkbox" title="Check here to pay via Paypal.">
-                          </section>
+            <div id="in-your-cart-card">
+                <h2 class="select-payment-method">Select Payment Method:</h2>
 
+                <section class="payment-select">
+                    <img class="card-symbol" src="../Images/cardsymbol.png" title="Card Payment Icon">
+                    <label for="card-payment-checkbox">Card:</label>
+                    <input type="checkbox" id="card-payment-checkbox" alt="Check here to pay by card.">
+                </section>
 
-                        <img class="paypal-bar" src="../Images/paypalbar.png" alt="We process via paypal!">
+                <section class="payment-select">
+                    <img class="paypal-symbol" src="../Images/paypal-vector.png" title="Paypal Icon">
+                    <label for="paypal-payment-checkbox">PayPal:</label>
+                    <input type="checkbox" id="paypal-payment-checkbox" title="Check here to pay via Paypal.">
+                </section>
 
-                        <label for="checkout-summary">Order Summary:</label>
-                        
-                        
-                        <textarea id="checkout-summary" class="checkout-summary" placeholder="Your Games:&#10;Tax:&#10;Your Total:"></textarea>
+                <img class="paypal-bar" src="../Images/paypalbar.png" alt="We process via Paypal!">
 
+                <label for="checkout-summary">Order Summary:</label>
 
-                        <a class="make-your-purchase-button" href="processing.html">Complete your purchase</a>
+                <textarea id="checkout-summary" class="checkout-summary" placeholder="Your Games:&#10;Tax:&#10;Your Total:"></textarea>
 
-                    </div>
+                <a class="make-your-purchase-button" href="processing.html">Complete your purchase</a>
 
+            </div>
 
-                    <footer id="footer">
-                        <div class="footer-links">
-                            <img class="baselogo" src="/Images/GameHub_Logo.png" alt="Teeny-tiny game hub logo!">
-                            <a href="/Pages/contactus.html"><img class="footer-envelope" src="/Images/envelopeicon.png" alt="Envelope anchor link for our email"></a>
-                            <a href="/index.html"><img class="facebooklogo" src="/Images/Facebooklogo-3.png" alt="facebook logo"></a>
-                            <a href="/index.html"><img class="twitterlogo" src="/Images/Twittersymbol-2.png" alt="twitter logo"></a>
-                        </div>
-                    </footer>
-
-    </div>  
- 
-            
- </header>
+            <footer id="footer">
+                <div class="footer-links">
+                    <img class="baselogo" src="/Images/GameHub_Logo.png" alt="Teeny-tiny game hub logo!">
+                    <a href="/Pages/contactus.html"><img class="footer-envelope" src="/Images/envelopeicon.png" alt="Envelope anchor link for our email"></a>
+                    <a href="/index.html"><img class="facebooklogo" src="/Images/Facebooklogo-3.png" alt="Facebook logo"></a>
+                    <a href="/index.html"><img class="twitterlogo" src="/Images/Twittersymbol-2.png" alt="Twitter logo"></a>
+                </div>
+            </footer>
+        </main>
+    </div>
 </body>
+
+</html>

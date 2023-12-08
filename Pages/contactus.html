@@ -1,126 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Open a new universe of games- The place to explore for competetive game experiences and prices.">
+    <meta name="description" content="Open a new universe of games- The place to explore for competitive game experiences and prices.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <title> GameHub - Contact Us </title>
+</head>
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-
-
-<link href="../styles.css" rel="stylesheet"> 
-<title> GameHub - Contact Us </title>
-
-    
-    <body>
-      <div class="game-info-background">
+<body>
+    <div class="game-info-background">
         <header id="main">
             <a id="logo" title="Game Hub" href="../index.html">Home</a>
 
             <nav class="navigation">
                 <ul>
-                    <li>
-                        <a id="homebutton" href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a id="aboutbutton" href="../Pages/aboutus.html">About</a>
-                    </li>
-                    <li>
-                        <a id="contactbutton" href="../Pages/contactus.html">Contact</a>
-                    </li>
-                    <li>
-                        <a id="cartbutton" href="../Pages/yourcart.html">Cart</a>
-                    </li>
+                    <li><a id="homebutton" href="../index.html">Home</a></li>
+                    <li><a id="aboutbutton" href="../Pages/aboutus.html">About</a></li>
+                    <li><a id="contactbutton" href="../Pages/contactus.html">Contact</a></li>
+                    <li><a id="cartbutton" href="../Pages/yourcart.html">Cart</a></li>
                 </ul>
             </nav>
         </header>
 
         <nav class="hamburger-menu">
-            <input type="checkbox" id="hamburger-toggle"/>
+            <input type="checkbox" id="hamburger-toggle" />
             <label for="hamburger-toggle" class="hamburger-icon">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
             <ul class="menu-items">
-                
                 <li><a href="/index.html"><img src="/Images/homeicon.png" alt="Home page">Home</a></li>
                 <li><a href="/Pages/aboutus.html"><img src="/Images/playericon.png" alt="About us">About</a></li>
                 <li><a href="/Pages/contactus.html"><img src="/Images/envelopeicon.png" alt="Contact us">Contact</a></li>
                 <li><a href="/Pages/yourcart.html"><img src="/Images/carticon.png" alt="Your cart">Cart</a></li>
             </ul>
-          </nav>
+        </nav>
 
-            <div class="background-image"></div>
+        <div class="background-image"></div>
 
-            <h1>Email Us:</h1>
-            <p class="drifting-images-text">
-                We appreciate your feedback! We also understand that there may be times that you need our help, so don’t hesitate to send us a message about any of your concerns. If you have any questions, don’t hesitate to ask us! We will try to respond in a timely manner.
-            </p>
+        <h1>Email Us:</h1>
+        <p class="drifting-images-text">
+            We appreciate your feedback! We also understand that there may be times that you need our help, so don’t hesitate to send us a message about any of your concerns. If you have any questions, don’t hesitate to ask us! We will try to respond in a timely manner.
+        </p>
 
-            <main class="main-body-container">
+        <main class="main-body-container">
+            <fieldset>
+                <form id="emailform">
+                    <legend>Email</legend>
+                    <h2>Send an Email</h2>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address:" required />
 
-                    <fieldset>
-                        <form id="emailform"></form>
-                        <legend>Email</legend>
-                        <h2>Send an Email</h2>
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Your email address:" required/>
-                        
-                        
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" placeholder="Email subject:"/>
-                        
-                        
-                        <label for="content">Email Content:</label>
-                        <textarea id="content" name="content" placeholder="Talk to us- What can we do for you?:"></textarea>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Email subject:" />
 
-                            <label for="subscribe">Subscribe to Emails from us?</label>
-                            <input type="checkbox" id="subscribe" name="subscribe"/>
+                    <label for="content">Email Content:</label>
+                    <textarea id="content" name="content" placeholder="Talk to us- What can we do for you?:"></textarea>
 
+                    <label for="subscribe">Subscribe to Emails from us?</label>
+                    <input type="checkbox" id="subscribe" name="subscribe" />
 
-                            <div id="popup" class="popup">
-                                <p>Thank you for subscribing!</p>
-                              </div>
+                    <div id="popup" class="popup">
+                        <p>Thank you for subscribing!</p>
+                    </div>
 
+                    <button class="submit-email-button">Submit Your Email!</button>
+                </form>
+            </fieldset>
+        </main>
 
-                        <button class="submit-email-button">Submit Your Email!</button>
-                    </form>
+        <footer id="footer">
+            <div class="footer-links">
+                <img class="baselogo" src="../Images/GameHub_Logo.png" alt="Teeny-tiny game hub logo!">
+                <a href="/Pages/contactus.html"><img class="footer-envelope" src="../Images/envelopeicon.png" alt="Envelope anchor link for our email"></a>
+                <a href="/index.html"><img class="facebooklogo" src="../Images/Facebooklogo-3.png" alt="facebook logo"></a>
+                <a href="/index.html"><img class="twitterlogo" src="../Images/Twittersymbol-2.png" alt="twitter logo"></a>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
 
-                    </fieldset>
-        </section> 
-    </main>
-
-
-    <footer id="footer">
-        <div class="footer-links">
-            <img class="baselogo" src="../Images/GameHub_Logo.png" alt="Teeny-tiny game hub logo!">
-            <a href="/Pages/contactus.html"><img class="footer-envelope" src="../Images/envelopeicon.png" alt="Envelope anchor link for our email"></a>
-            <a href="/index.html"><img class="facebooklogo" src="../Images/Facebooklogo-3.png" alt="facebook logo"></a>
-            <a href="/index.html"><img class="twitterlogo" src="../Images/Twittersymbol-2.png" alt="twitter logo"></a>
-        </div>
-    </footer>
-
-
-        
-
-       
-    </div>  
-  </div>
-            
- 
-</header>
+</html>
