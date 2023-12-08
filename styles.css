@@ -1138,3 +1138,21 @@ background-color: #BF2800;
     align-self: center;
     align-content: center;
 }
+
+
+.add-to-cart-button,
+.buy-button {
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #2b7425;
+}
+
+#buyButton {
+  cursor: pointer;
+}
+
+#buyButton:hover {
+  background-color: #2b7425;
+}
