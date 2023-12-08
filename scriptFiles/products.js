@@ -1,3 +1,5 @@
+// products.js
+
 const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 const element = document.getElementById("products");
 

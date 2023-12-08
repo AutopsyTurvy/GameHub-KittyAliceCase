@@ -1,4 +1,4 @@
-//Product.js - The Product details
+// Product.js - The Product details
 
 const searchParams = new URLSearchParams(window.location.search);
 const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
@@ -47,26 +47,17 @@ function fetchData() {
           return false;
         });
     })
-    
     .catch(error => {
       console.error("An error occurred:", error.message);
 
       var element = document.getElementById("product");
       const errorId = "singleProductError";
       element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
+    })
+    .finally(() => {
+      document.getElementById("loading").style.display = "none";
+      addNumberOfItemsToCartIcon(); // Call it here
     });
-
-  document.getElementById("loading").style.display = "none";
-}
-
-function addProductToCart(id) {
-  if(localStorage.getItem("cart") === null) {
-    localStorage.setItem("cart", id);
-  } else {
-      var cart = localStorage.getItem("cart").split(",");
-      cart.push(id);
-      localStorage.setItem("cart", cart.join(","));
-  }
 }
 
 fetchData();
