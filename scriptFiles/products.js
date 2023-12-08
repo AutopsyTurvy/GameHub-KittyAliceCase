@@ -13,13 +13,13 @@ async function fetchData() {
     } else {
       element.innerHTML = data.map(item => `
         <article id="api-game-container">
-          <a href="./pages/product.html?id=${item.id}">
-            <img id="api-image" src="${item.image}">
-            <h2>${item.title}</h2>
-          </a>
+          <img id="api-image" src="${item.image}">
+          <h2>${item.title}</h2>
           <div class="extra-info">
             <p>Genre: ${item.genre}</p>
-            <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
+            <a href="./pages/product.html?id=${item.id}">
+              <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
+            </a>
             <button class="add-to-cart-button" onclick="addToCart('${item.id}')">Add to Cart</button>
           </div>
         </article>
