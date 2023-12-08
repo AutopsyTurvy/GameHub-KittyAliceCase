@@ -6,7 +6,14 @@ const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 function fetchData() {
   document.getElementById("loading").style.display = "block";
 
-  const response = fetch(`${baseUrl}/${searchParams.get('id')}`)
+
+  
+  const gameId = searchParams.get('id');
+  const url = `${baseUrl}/${gameId}`; 
+
+
+
+  const response = fetch(url)
     .then(response => response.json())
     .then(data => {
       var element = document.getElementById("product");
@@ -29,24 +36,27 @@ function fetchData() {
         <p>${data.description}</p>
 
         <div class="genreandagerating">
-          <p>Genre: ${data.genre}</p>
-          <p>Age Rating: ${data.ageRating}</p>
+            <p>Genre: ${data.genre}</p>
+            <p>Age Rating: ${data.ageRating}</p>
         </div>
 
         <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
 
         <p>Date of Release: ${data.released}</p>
         <a href="#" id="addToCartButton-${data.id}" class="add-to-cart-link">Add to Cart!</a>
-      `;
+      
+      
+        `;
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {
-          addProductToCart(data.id, displayedPrice);
+          addProductToCart(data.id);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
           return false;
         });
     })
+    
     .catch(error => {
       console.error("An error occurred:", error.message);
 
@@ -58,14 +68,20 @@ function fetchData() {
   document.getElementById("loading").style.display = "none";
 }
 
-function addProductToCart(id, price) {
-  if(localStorage.getItem("cart") === null) {
-    localStorage.setItem("cart", JSON.stringify([{ id, price }]));
+function addProductToCart(id) {
+  var cart = localStorage.getItem("cart");
+
+  if (cart === null) {
+    localStorage.setItem("cart", id);
   } else {
-    var cart = JSON.parse(localStorage.getItem("cart"));
-    cart.push({ id, price });
-    localStorage.setItem("cart", JSON.stringify(cart));
+    var cartItems = cart.split(",").map(itemId => itemId.trim());
+
+    if (!cartItems.includes(id)) {
+
+      cartItems.push(id);
+      localStorage.setItem("cart", cartItems.join(","));
+    }
   }
 }
 
-fetchData();
+fetchData(); 
