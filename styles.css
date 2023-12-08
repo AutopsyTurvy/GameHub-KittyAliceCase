@@ -348,18 +348,22 @@ article {
 
 
 .add-to-cart-button {
-  padding: 0.8em;
   background-color: #40A434;
   color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5px;
   cursor: pointer;
+  border-radius: 5px;
+  width: 90%;
 
 }
 
 .add-to-cart-button:hover {
-  padding: 0.5em;
   background-color: #2b7425;
-  color: white;
-  cursor: pointer;
   
 }
 
