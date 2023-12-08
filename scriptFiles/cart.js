@@ -5,3 +5,4 @@ function addNumberOfItemsToCartIcon() {
     cartButton.innerHTML = `cart (${localStorage.getItem("cart").split(",").length})`
 }
 addNumberOfItemsToCartIcon();
+
