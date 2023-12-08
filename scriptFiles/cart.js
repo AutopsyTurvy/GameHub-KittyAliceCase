@@ -5,6 +5,11 @@ function displayCartItems() {
     var emptyCartText = document.querySelector(".empty-cart-text");
     var cartContainer = document.getElementById("cart-container");
 
+    if (!cartContainer) {
+        console.error("cart-container not found on the page");
+        return;
+    }
+
     if (cartItems) {
         cartItems = cartItems.split(",");
 
