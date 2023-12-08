@@ -1,8 +1,9 @@
 // Product.js - The Product details
 
-const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub"; // Changed the variable name here
+const searchParams = new URLSearchParams(window.location.search);
+const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
-function fetchData() {
+function fetchProductData() {
   document.getElementById("loading").style.display = "block";
 
   const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
@@ -55,8 +56,8 @@ function fetchData() {
     })
     .finally(() => {
       document.getElementById("loading").style.display = "none";
-      addNumberOfItemsToCartIcon(); // Call it here
+      addNumberOfItemsToCartIcon(); 
     });
 }
 
-fetchData();
+fetchProductData();
