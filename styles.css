@@ -253,6 +253,60 @@ header#main nav ul li a {
 
 
 
+
+
+
+
+
+
+.hamburger-menu {
+  display: none; 
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+      display: block; 
+  }
+
+  .navigation {
+      display: none; 
+  }
+
+
+  .menu-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .menu-items li {
+      margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* welcome */
 
 #welcome {
