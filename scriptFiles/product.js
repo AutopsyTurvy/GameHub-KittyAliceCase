@@ -1,12 +1,11 @@
 // Product.js - The Product details
 
-const searchParams = new URLSearchParams(window.location.search);
-const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
+const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub"; // Changed the variable name here
 
 function fetchData() {
   document.getElementById("loading").style.display = "block";
 
-  const response = fetch(`${baseUrl}/${searchParams.get('id')}`)
+  const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
     .then(data => {
       var element = document.getElementById("product");
