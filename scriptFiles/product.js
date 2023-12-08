@@ -1,17 +1,12 @@
 //Product.js - The Product details
 
-//Product.js - The Product details
-
 const searchParams = new URLSearchParams(window.location.search);
-const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub"; // Change the variable name
+const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
 function fetchData() {
   document.getElementById("loading").style.display = "block";
 
-  const gameId = searchParams.get('id');
-  const url = `${productBaseUrl}/${gameId}`; // Update the variable name
-
-  const response = fetch(url)
+  const response = fetch(`${baseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
     .then(data => {
       var element = document.getElementById("product");
@@ -34,8 +29,8 @@ function fetchData() {
         <p>${data.description}</p>
 
         <div class="genreandagerating">
-            <p>Genre: ${data.genre}</p>
-            <p>Age Rating: ${data.ageRating}</p>
+          <p>Genre: ${data.genre}</p>
+          <p>Age Rating: ${data.ageRating}</p>
         </div>
 
         <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
@@ -46,7 +41,7 @@ function fetchData() {
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {
-          addProductToCart(data.id);
+          addProductToCart(data.id, displayedPrice);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
           return false;
@@ -63,18 +58,13 @@ function fetchData() {
   document.getElementById("loading").style.display = "none";
 }
 
-function addProductToCart(id) {
-  var cart = localStorage.getItem("cart");
-
-  if (cart === null) {
-    localStorage.setItem("cart", id);
+function addProductToCart(id, price) {
+  if(localStorage.getItem("cart") === null) {
+    localStorage.setItem("cart", JSON.stringify([{ id, price }]));
   } else {
-    var cartItems = cart.split(",").map(itemId => itemId.trim());
-
-    if (!cartItems.includes(id)) {
-      cartItems.push(id);
-      localStorage.setItem("cart", cartItems.join(","));
-    }
+    var cart = JSON.parse(localStorage.getItem("cart"));
+    cart.push({ id, price });
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 }
 
