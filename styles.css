@@ -344,9 +344,12 @@ article {
 
 
 
+
+
+
 .add-to-cart-button {
-  padding: 0.5em;
-  background-color: rgb(222, 66, 26);
+  padding: 0.8em;
+  background-color: #40A434;
   color: white;
   cursor: pointer;
 
@@ -354,11 +357,14 @@ article {
 
 .add-to-cart-button:hover {
   padding: 0.5em;
-  background-color: #BF2800;
+  background-color: #2b7425;
   color: white;
   cursor: pointer;
   
 }
+
+
+
 
 
 
