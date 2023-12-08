@@ -13,7 +13,7 @@ async function fetchData() {
     } else {
       element.innerHTML = data.map(item => `
         <article id="api-game-container">
-          <a href="/pages/product.html?id=${item.id}">
+        <a href="./Pages/product.html?id=someProductId">
             <img id="api-image" src="${item.image}">
             <h2>${item.title}</h2>
           </a>
