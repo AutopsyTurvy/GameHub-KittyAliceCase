@@ -1,4 +1,4 @@
-// Product.js - The Product details
+//Product.js - The Product details
 
 const searchParams = new URLSearchParams(window.location.search);
 const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
@@ -47,6 +47,7 @@ function fetchData() {
           return false;
         });
     })
+    
     .catch(error => {
       console.error("An error occurred:", error.message);
 
