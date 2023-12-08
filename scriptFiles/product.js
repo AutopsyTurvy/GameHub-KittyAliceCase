@@ -1,4 +1,4 @@
-// Product.js
+// Product.js - The Product details
 
 const searchParams = new URLSearchParams(window.location.search);
 const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
@@ -29,8 +29,8 @@ function fetchData() {
         <p>${data.description}</p>
 
         <div class="genreandagerating">
-          <p>Genre: ${data.genre}</p>
-          <p>Age Rating: ${data.ageRating}</p>
+            <p>Genre: ${data.genre}</p>
+            <p>Age Rating: ${data.ageRating}</p>
         </div>
 
         <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
@@ -62,9 +62,9 @@ function addProductToCart(id) {
   if(localStorage.getItem("cart") === null) {
     localStorage.setItem("cart", id);
   } else {
-    var cart = localStorage.getItem("cart").split(",");
-    cart.push(id);
-    localStorage.setItem("cart", cart.join(","));
+      var cart = localStorage.getItem("cart").split(",");
+      cart.push(id);
+      localStorage.setItem("cart", cart.join(","));
   }
 }
 
