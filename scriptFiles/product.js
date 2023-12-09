@@ -40,13 +40,13 @@ function fetchProductData() {
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {
-          addProductToCart(data.id);  // Call your function here
+          addProductToCart(data.id);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
           return false;
         });
       
-      // Add the addProductToCart function here
+     
       function addProductToCart(id) {
         if(localStorage.getItem("cart") === null) {
           localStorage.setItem("cart", id);
