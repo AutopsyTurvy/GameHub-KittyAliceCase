@@ -2,28 +2,27 @@
 
 
 
-const searchParams = new URLSearchParams(window.location.search);
-const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub";
-
 function fetchProductData() {
-  let element = document.getElementById("product"); 
+  let element = document.getElementById("product");
 
   const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
     .then(data => {
-
       const isOnSale = data.onSale;
       const displayedPrice = isOnSale ? data.discountedPrice : data.price;
 
+      const addToCartButton = document.getElementById(`addToCartButton-${data.id}`);
 
-
-      document.getElementById(`addToCartButton-${data.id}`)
-        .addEventListener("click", (e) => {
+      if (addToCartButton) {
+        addToCartButton.addEventListener("click", (e) => {
           addProductToCart(data.id);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
           return false;
         });
+      } else {
+        console.error(`Element with ID 'addToCartButton-${data.id}' not found.`);
+      }
 
       function addProductToCart(id) {
         if (localStorage.getItem("cart") === null) {
@@ -37,7 +36,6 @@ function fetchProductData() {
     })
     .catch(error => {
       console.error("An error occurred:", error.message);
-
 
       element = document.getElementById("product");
       const errorId = "singleProductError";
