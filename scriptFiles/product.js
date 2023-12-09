@@ -1,10 +1,10 @@
 // Product.js - The Product details
 
+
 const searchParams = new URLSearchParams(window.location.search);
 const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
 function fetchProductData() {
-  document.getElementById("loading").style.display = "block";
 
   const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
@@ -55,7 +55,6 @@ function fetchProductData() {
       element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
     })
     .finally(() => {
-      document.getElementById("loading").style.display = "none";
       addNumberOfItemsToCartIcon(); 
     });
 }
