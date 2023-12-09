@@ -1,53 +1,74 @@
-// Product.js - The Product details
+//Product.js - The Product details
 
+const searchParams = new URLSearchParams(window.location.search);
+const baseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
+function fetchData() {
+  document.getElementById("loading").style.display = "block";
 
-function fetchProductData() {
-  let element = document.getElementById("product");
-
-  const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
+  const response = fetch(`${baseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
     .then(data => {
+      var element = document.getElementById("product");
+
       const isOnSale = data.onSale;
-      const displayedPrice = isOnSale ? data.discountedPrice : data.price;
+      const displayedPrice = isOnSale 
+        ? data.discountedPrice 
+        : data.price;
+  
+      const priceText = isOnSale
+        ? `This item is on sale! Discounted price is: $${data.discountedPrice}`
+        : `Price: ${data.price}`;
+  
+      const exchangeRate = 11.11;
+      const priceInKroner = displayedPrice * exchangeRate;
+  
+      element.innerHTML = `
+        <img src="${data.image}">
+        <h2>${data.title}</h2>
+        <p>${data.description}</p>
 
-      const addToCartButton = document.getElementById(`addToCartButton-${data.id}`);
+        <div class="genreandagerating">
+            <p>Genre: ${data.genre}</p>
+            <p>Age Rating: ${data.ageRating}</p>
+        </div>
 
-      if (addToCartButton) {
-        addToCartButton.addEventListener("click", (e) => {
+        <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
+
+        <p>Date of Release: ${data.released}</p>
+        <a href="#" id="addToCartButton-${data.id}" class="add-to-cart-link">Add to Cart!</a>
+      `;
+
+      document.getElementById(`addToCartButton-${data.id}`)
+        .addEventListener("click", (e) => {
           addProductToCart(data.id);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
           return false;
         });
-      } else {
-        console.error(`Element with ID 'addToCartButton-${data.id}' not found.`);
-      }
-
-      function addProductToCart(id) {
-        if (localStorage.getItem("cart") === null) {
-          localStorage.setItem("cart", id);
-        } else {
-          var cart = localStorage.getItem("cart").split(",");
-          cart.push(id);
-          localStorage.setItem("cart", cart.join(","));
-        }
-      }
     })
+    
     .catch(error => {
       console.error("An error occurred:", error.message);
 
-      element = document.getElementById("product");
+      var element = document.getElementById("product");
       const errorId = "singleProductError";
-      if (element) {
-        element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
-      } else {
-        console.error("Element is null. Unable to display error message.");
-      }
-    })
-    .finally(() => {
-      addNumberOfItemsToCartIcon();
+      element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
     });
+
+  document.getElementById("loading").style.display = "none";
 }
 
-fetchProductData();
+function addProductToCart(id) {
+  var cart = localStorage.getItem("cart");
+
+  if (cart === null) {
+    localStorage.setItem("cart", JSON.stringify([id]));
+  } else {
+    var cartItems = JSON.parse(cart);
+    cartItems.push(id);
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  }
+}
+
+fetchData();
