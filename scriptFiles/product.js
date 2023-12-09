@@ -60,11 +60,13 @@ function fetchProductData() {
     .catch(error => {
       console.error("An error occurred:", error.message);
 
+     
       element = document.getElementById("product"); 
       const errorId = "singleProductError";
       element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
     })
     .finally(() => {
+  
       addNumberOfItemsToCartIcon(); 
     });
 }
