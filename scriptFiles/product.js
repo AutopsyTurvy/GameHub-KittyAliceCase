@@ -5,7 +5,6 @@ const searchParams = new URLSearchParams(window.location.search);
 const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
 function fetchProductData() {
-
   const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
     .then(data => {
@@ -29,8 +28,8 @@ function fetchProductData() {
         <p>${data.description}</p>
 
         <div class="genreandagerating">
-            <p>Genre: ${data.genre}</p>
-            <p>Age Rating: ${data.ageRating}</p>
+          <p>Genre: ${data.genre}</p>
+          <p>Age Rating: ${data.ageRating}</p>
         </div>
 
         <p>${priceText} / ${priceInKroner.toFixed(2)} Kr</p>
@@ -41,11 +40,22 @@ function fetchProductData() {
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {
-          addProductToCart(data.id);
+          addProductToCart(data.id);  // Call your function here
           addNumberOfItemsToCartIcon();
           e.preventDefault();
           return false;
         });
+      
+      // Add the addProductToCart function here
+      function addProductToCart(id) {
+        if(localStorage.getItem("cart") === null) {
+          localStorage.setItem("cart", id);
+        } else {
+          var cart = localStorage.getItem("cart").split(",");
+          cart.push(id);
+          localStorage.setItem("cart", cart.join(","));
+        }
+      }
     })
     .catch(error => {
       console.error("An error occurred:", error.message);
