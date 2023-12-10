@@ -10,15 +10,25 @@ function renderCartItems() {
     var cartItems = localStorage.getItem("cart");
     var cartContainer = document.getElementById("cart-container");
 
+    
     cartContainer.innerHTML = '';
 
-    if (cartItems !== null) {
+    if (cartItems) {
         cartItems = cartItems.split(",");
+        if (cartItems.length === 0 || (cartItems.length === 1 && cartItems[0] === '')) {
+      
+            cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+            return;
+        }
+
         cartItems.forEach(function (productId) {
             fetchProductDetails(productId).then(function (productDetails) {
                 renderProductInCart(cartContainer, productDetails);
             });
         });
+    } else {
+
+        cartContainer.innerHTML = '<p>Your cart is empty.</p>';
     }
 }
 
