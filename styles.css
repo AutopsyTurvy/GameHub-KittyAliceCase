@@ -264,7 +264,28 @@ header#main nav ul li a {
 }
 
 
-/*JavaScript styles*/
+
+.home-intro-paragraph {
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+
+.oddworld-screen-border {
+
+  background-color: #000026;
+  padding: 2em;
+
+
+}
+
+.oddworld-opening-image {
+  border: 2px solid rgb(222, 66, 26);
+  max-width: 80%;
+ 
+  border-radius: 20px;
+  margin: auto;
+
+}
 
 
 #products {
