@@ -367,8 +367,11 @@ article {
 
 
 
+
+
+
 .add-to-cart-button {
-  background-color: #40A434;
+  background-color: rgb(222, 66, 26);
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -383,9 +386,14 @@ article {
 }
 
 .add-to-cart-button:hover {
-  background-color: #2b7425;
+  background-color: #a02f12;
   
 }
+
+
+
+
+
 
 
 
@@ -427,7 +435,7 @@ body .api-error-message {
 
 
   #buyButton {
-    background-color: #40A434;
+    background-color: rgb(222, 66, 26);
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -443,7 +451,7 @@ body .api-error-message {
 
   .submit-email-button {
 
-    background-color: #40A434;
+    background-color: rgb(222, 66, 26);
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -459,7 +467,7 @@ body .api-error-message {
   }
 
   [id^="buyButton"] {
-    background-color: #40A434;
+    background-color: rgb(222, 66, 26);
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -473,7 +481,7 @@ body .api-error-message {
 }
 
 [id^="buyButton"]:hover {
-background-color: #2b7425;
+  background-color: #a02f12;
 }
 
 
@@ -491,7 +499,7 @@ h3 {
 
 
 .remove-item-button {
-  background-color: #40A434;
+  background-color: rgb(222, 66, 26);
   color: white;
   padding: 0.5em 0.8em;
   text-align: center;
@@ -1096,7 +1104,7 @@ h3 {
   font-size: 1.2em;
 }
 .remove-item-button {
-  background-color: #40A434;
+  background-color: rgb(222, 66, 26);
   color: white;
   padding: 0.5em 0.8em;
   text-align: center;
@@ -1230,7 +1238,7 @@ h3 {
 }
 
 .add-to-cart-button:hover {
-  background-color: #2b7425;
+  background-color: #a02f12;
 }
 
 #buyButton {
@@ -1238,5 +1246,5 @@ h3 {
 }
 
 #buyButton:hover {
-  background-color: #2b7425;
+  background-color: #a02f12;
 }
