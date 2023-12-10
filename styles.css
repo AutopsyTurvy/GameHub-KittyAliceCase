@@ -468,7 +468,7 @@ body .api-error-message {
 
   [id^="buyButton"] {
     background-color: rgb(222, 66, 26);
-    color: white;
+    color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -647,10 +647,24 @@ h3 {
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .add-to-cart-link {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: rgb(222, 66, 26);
   color: #fff;
   border: 2px solid white;
   border-radius: 5px;
@@ -660,7 +674,7 @@ h3 {
 }
 
 .add-to-cart-link:hover {
-  background-color: #45a049;
+  background-color: #a02f12;
 }
 
 
