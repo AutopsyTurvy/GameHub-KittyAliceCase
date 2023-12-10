@@ -20,7 +20,7 @@ async function fetchData() {
             <a href="./pages/product.html?id=${item.id}">
               <button id="buyButton-${item.id}" class="buy-button">Click for more Info</button>
             </a>
-            <button class="add-to-cart-button" onclick="addToCart('${item.id}')">Add to Cart</button>
+            <button class="add-to-cart-button" onclick="addToCart('${item.id}', '${item.title}')">Add to Cart</button>
           </div>
         </article>
       `).join('');
@@ -37,7 +37,7 @@ async function fetchData() {
   }
 }
 
-function addToCart(productIdToAdd) {
+function addToCart(productIdToAdd, productTitle) {
   var cart = localStorage.getItem("cart");
 
   if (cart !== null && cart.trim() !== "") {
@@ -52,6 +52,8 @@ function addToCart(productIdToAdd) {
   localStorage.setItem("cart", updatedCartItems);
 
   addNumberOfItemsToCartIcon();
+
+  alert(`${productTitle} has been added to your cart.`);
 }
 
 function addNumberOfItemsToCartIcon() {
