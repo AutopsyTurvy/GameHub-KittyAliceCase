@@ -297,8 +297,8 @@ header#main nav ul li a {
 
 
 article {
-    background-color: rgb(222, 66, 26);
-    border: 3px solid #ccc;
+    background-color: #1a203c;
+    border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
     padding: 15px; 
     display: flex;
@@ -323,7 +323,7 @@ article {
     max-width: 90%; 
     display: flex;
     margin: 0 auto;
-    border: 3px solid rgb(255, 255, 255);
+    border: 2px solid rgb(222, 66, 26);
     border-radius: 20px;
   }
 
@@ -1052,6 +1052,70 @@ background-color: #BF2800;
 }
 
 }
+
+
+
+
+
+
+
+
+
+.cart-item-image {
+  max-width: 8em; 
+  max-height: 8em; 
+  margin-left: 2em;
+  width: auto;
+  height: auto;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details h3 {
+  font-size: 14px;
+}
+
+.cart-item-details p {
+  font-size: 12px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+h3 {
+  color: #fff;
+  font-size: 1.2em;
+}
+.remove-item-button {
+  background-color: #40A434;
+  color: white;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.6em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

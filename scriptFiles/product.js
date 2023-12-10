@@ -4,17 +4,13 @@ const searchParams = new URLSearchParams(window.location.search);
 const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
 function fetchProductData() {
-  var element; 
+  var element = document.getElementById("product"); 
 
-  const response = fetch(`${productBaseUrl}/${searchParams.get('id')}`)
+  fetch(`${productBaseUrl}/${searchParams.get('id')}`)
     .then(response => response.json())
     .then(data => {
-      element = document.getElementById("product"); 
-
       const isOnSale = data.onSale;
-      const displayedPrice = isOnSale 
-        ? data.discountedPrice 
-        : data.price;
+      const displayedPrice = isOnSale ? data.discountedPrice : data.price;
 
       const priceText = isOnSale
         ? `This item is on sale! Discounted price is: $${data.discountedPrice}`
@@ -44,29 +40,33 @@ function fetchProductData() {
           addProductToCart(data.id);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
-          return false;
         });
-
-      function addProductToCart(id) {
-        if(localStorage.getItem("cart") === null) {
-          localStorage.setItem("cart", id);
-        } else {
-          var cart = localStorage.getItem("cart").split(",");
-          cart.push(id);
-          localStorage.setItem("cart", cart.join(","));
-        }
-      }
     })
     .catch(error => {
       console.error("An error occurred:", error.message);
-
-      element = document.getElementById("product"); 
-      const errorId = "singleProductError";
-      element.innerHTML = `<p id="${errorId}" class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
+      element.innerHTML = `<p class='singleProductError'>Oops! An error occurred while fetching the API!</p>`;
     })
     .finally(() => {
       addNumberOfItemsToCartIcon(); 
     });
+}
+
+function addProductToCart(id) {
+  var cart = localStorage.getItem("cart");
+  if (cart === null) {
+    localStorage.setItem("cart", id);
+  } else {
+    var cartItems = cart.split(",").map(itemId => itemId.trim());
+    if (!cartItems.includes(id)) {
+      cartItems.push(id);
+      localStorage.setItem("cart", cartItems.join(","));
+    }
+  }
+}
+
+
+function addNumberOfItemsToCartIcon() {
+
 }
 
 fetchProductData();
