@@ -39,7 +39,7 @@ function fetchProductData() {
 
       document.getElementById(`addToCartButton-${data.id}`)
         .addEventListener("click", (e) => {
-          console.log(`Attempting to add product ID: ${data.id}`); 
+          console.log(`Attempting to add product ID: ${data.id}`);
           addProductToCart(data.id);
           addNumberOfItemsToCartIcon();
           e.preventDefault();
