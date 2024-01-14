@@ -2,6 +2,123 @@
 
 
 
+
+const apiURLbase = "https://game-hub-kittyalicecase.no";
+
+const productURL = "/wp-json/wc/store/products";
+
+const storeURL = "https://game-hub-kittyalicecase.no/wp-json/wc/store/products";
+
+const imageURL = "https://game-hub-kittyalicecase.no/wp-content/uploads/2024/01/4-assassin-324x324.jpg";
+
+
+//THUMBNAILS:-----------------------------------------------------------
+
+
+
+
+
+async function fetchThumbnails() {
+  try {
+      const response = await fetch(storeURL);
+      const getResults = await response.json();
+      let htmlContent = '';
+
+      for (var i = 0; i < getResults.length; i++) {
+          
+          htmlContent += `<img src="${getResults[i].images[0].thumbnail}" alt="Product Thumbnail">`;
+      }
+
+      document.getElementById('thumbnail-images').innerHTML = htmlContent;
+  }
+  catch (error) {
+      console.log(error);
+  }
+}
+
+fetchThumbnails();
+
+
+
+
+
+
+//MAIN PAGE PRODUCTS:---------------------------------------------------
+
+
+
+
+//product.js
+
+
+
+function redirectToProductInfo(productId) {
+  window.open(`../productInfo.html?productId=${productId}`, '_blank');
+}
+
+async function fetchProducts() {
+  try {
+      const response = await fetch(storeURL);
+      const getResults = await response.json();
+      let htmlContent = '';
+
+      for (var i = 0; i < getResults.length; i++) {
+          const product = getResults[i];
+          htmlContent += `
+              <div class="product">
+                  <img src="${product.images[0].src}" alt="Product Image">
+                  <div id="wordpress-product-details">
+                      <h3>${product.name}</h3>
+                      <p>Regular Price: ${product.prices.regular_price} ${product.prices.currency_symbol}</p>
+                      <p>Sale Price: ${product.prices.sale_price} ${product.prices.currency_symbol}</p>
+                      <p>Currency Code: ${product.prices.currency_code}</p>
+                      <button onclick="redirectToProductInfo(${product.id})">More Information</button>
+                  </div>
+              </div>`;
+      }
+
+      document.getElementById('productContainer').innerHTML = htmlContent;
+  } catch (error) {
+      console.log(error);
+  }
+}
+
+fetchProducts();
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const searchParams = new URLSearchParams(window.location.search);
 const productBaseUrl = "https://api.noroff.dev/api/v1/gamehub";
 
@@ -53,6 +170,19 @@ function fetchProductData() {
       addNumberOfItemsToCartIcon(); 
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function addProductToCart(id) {
   console.log("Adding product with ID:", id); 
