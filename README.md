@@ -4,74 +4,90 @@
 # Game Hub, Cross Course Project- 
 
 This was our first project in the first year of our Studies-
-For this reason I think the design was an inexperienced one
+This was initially our introduction into design and CSS, then an exercise in stretching our JavaScript skills.
+The main purpose of this site was to advertise and sell games at competitive prices, to be able to view them and their specific details and to add them to your cart.
+
+
+## Site purpose:
+
+A game purchasing site with competitive prices and smooth functionality. An exercise in our design and JavaScript skills.
+
+
+
+### Description
+
+-- Home Page
+
+Our home page was meant to introduce the site adequately, so at a glance it was obvious what the site did- 
+Thous would be via a title or to introduce the games- i tried to do both.
+This page should be easily to navigate through, and show clear options to view ore details about the games being sold. 
+
+-- Games 
+
+The user should have the option to click on one of the games displayed either on the home page, or a page where a selection of the games can be viewed, and be taken to a page the displays more information- 
+
+-- Info page
+
+The page where the user can see more of the pertinent details about their prospective purchase, the price, if said game is on sale, how many players, the genre and a descriptive paragraph about the gameplay and adventure ahead.
+
+-- buy now
+
+Upon clicking the "Buy Now"/ "Add to cart" button on either the home page or the product details page, the number next to the cart icon should increase. 
+Whwn clicking on the cart icon itself, there should be visible a list of the games (or an empty cart if you have not selected any of the games), their prices, a running total and a "complete purchase" button that accurately simulates the buying process.
+
+
+-- Contact Page
+
+This page should have form validation, and simulate the process of emailing the hosts of the site.
+
+-- Other Pages
+
+For the functionality of the site the other pages are not integral- should inclide an "About us" page.
+
+
+** Note **
+
+No Tech used so far- Pure CSS, HTML, and JavaScript- will update if this changes
 
 
 
 
-
-
-
-
-
-
-
-
-
-Your project title
-
-image
-
-A simple overview of the use/purpose of the project.
-
-Description
-
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-List item 1
-List item 2
-List item 3
-Built With
-
-You can list a the tech stack that you've used over here
-
-React.js
-Bootstrap
-Getting Started
+#### Getting Started
 
 Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 Clone the repo:
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
-Install the dependencies:
+git clone git@github.com: https://github.com/AutopsyTurvy/GameHub-KittyAliceCase.git
+Install the dependencies: N/A
 npm install
-Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+
+
+Running
 
 To run the app, run the following commands:
 
 npm run start
+
+
+
 Contributing
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate CONTRIBUTING.md and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+
+Contributions are welcome, but I would request that the invidicual that does so, clones the code and adds notes so that I can review any changes before they are comitted to the project permanently. Thank you! 
+
 
 Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-My Twitter page
+Email me: 
 
-My LinkedIn page
+autopsyturvycoding@gmail.com
 
-License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+
+Thanks to my dear friend Jamie, who explained so much to me. 
