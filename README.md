@@ -1,6 +1,10 @@
-![Image 25-02-2024 at 22 22 (1)](https://github.com/AutopsyTurvy/GameHub-KittyAliceCase/assets/102550358/f9d2f484-ccfe-4188-8149-acf7be130035)
+
 ![GitHub Logo](https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png)
 
+
+
+
+![Image 25-02-2024 at 22 22 (1)](https://github.com/AutopsyTurvy/GameHub-KittyAliceCase/assets/102550358/f9d2f484-ccfe-4188-8149-acf7be130035)
 ![My Image](documents/projectscreenshots/gamehub.jpg)
 
 
