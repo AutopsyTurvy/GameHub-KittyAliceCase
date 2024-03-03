@@ -1,12 +1,14 @@
 
+---
+
 ![GitHub Logo](https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png)
 
 
-
+---
 
 ![Image 25-02-2024 at 22 22 (1)](https://github.com/AutopsyTurvy/GameHub-KittyAliceCase/assets/102550358/f9d2f484-ccfe-4188-8149-acf7be130035)
 
-
+---
 
 # Game Hub, Cross Course Project- 
 
@@ -38,7 +40,7 @@ Our Brief:
 
 ## Site purpose:
 
-A game purchasing site with competitive prices and smooth functionality. An exercise in our design and JavaScript skills.
+A game purchasing site with competitive prices and smooth functionality. You should be able to see a full display of the games on offer, and them add them to a semi functioning cart. (Main purpose-- to buy games.)
 
 
 
@@ -81,15 +83,7 @@ For the functionality of the site the other pages are not integral- should incli
 No Tech used so far- Pure CSS, HTML, and JavaScript- will update if this changes
 
 
-
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50" height="50">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Discord.svg" width="50" height="50">
-
-
-https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Discord.svg
-
-
-![Image 25-02-2024 at 22 22 (1)](https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg)
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg" width="50" height="50"> <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" width="50" height="50"> <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" width="50" height="50"> <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode-Dark.svg" width="50" height="50">
 
 
 
@@ -98,36 +92,47 @@ https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Discord.svg
 
 Installing
 
-
 Clone the repo:
-git clone git@github.com: https://github.com/AutopsyTurvy/GameHub-KittyAliceCase.git
+
+    git clone git@github.com: https://github.com/AutopsyTurvy/GameHub-KittyAliceCase.git
+
 Install the dependencies: N/A
-npm install
 
-
+    npm install
 
 Running
 
 To run the app, run the following commands:
 
-npm run start
+    npm run start
 
 
+(You may also choose to add to/ clone this code in another way than through the command line or terminal, and you may do this by opening it in your chosen code editor, via GitHub desktop, and subsequently, VScode. )
+
+
+---
 
 Contributing
 
 
 Contributions are welcome, but I would request that the invidicual that does so, clones the code and adds notes so that I can review any changes before they are comitted to the project permanently. Thank you! 
 
+---
 
-Contact
+Contact:
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
 Email me: 
-
 autopsyturvycoding@gmail.com
 
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Discord.svg" width="50" height="50">
+
+
+Find me on Discord:
+(Kitty Alice Case
+kittyalicerayworth)
+
+---
 
 Acknowledgments
 
