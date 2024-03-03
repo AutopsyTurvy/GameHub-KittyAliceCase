@@ -5,7 +5,7 @@
 
 
 ![Image 25-02-2024 at 22 22 (1)](https://github.com/AutopsyTurvy/GameHub-KittyAliceCase/assets/102550358/f9d2f484-ccfe-4188-8149-acf7be130035)
-![My Image](documents/projectscreenshots/gamehub.jpg)
+
 
 
 # Game Hub, Cross Course Project- 
@@ -58,7 +58,11 @@ No Tech used so far- Pure CSS, HTML, and JavaScript- will update if this changes
 
 
 
-![HTML, CSS and JavaScript logos](https://c0.klipartz.com/pngpicture/585/981/gratis-png-html-js-y-css-logo-hojas-de-estilo-en-cascada-javascript-html-css3-jquery-logo.png)
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50" height="50">
+
+
+![Image 25-02-2024 at 22 22 (1)](https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg)
+
 
 
 
