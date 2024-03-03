@@ -1,4 +1,7 @@
+![Image 25-02-2024 at 22 22 (1)](https://github.com/AutopsyTurvy/GameHub-KittyAliceCase/assets/102550358/f9d2f484-ccfe-4188-8149-acf7be130035)
+![GitHub Logo](https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png)
 
+![My Image](documents/projectscreenshots/gamehub.jpg)
 
 
 # Game Hub, Cross Course Project- 
@@ -49,6 +52,9 @@ For the functionality of the site the other pages are not integral- should incli
 
 No Tech used so far- Pure CSS, HTML, and JavaScript- will update if this changes
 
+
+
+![HTML, CSS and JavaScript logos](https://c0.klipartz.com/pngpicture/585/981/gratis-png-html-js-y-css-logo-hojas-de-estilo-en-cascada-javascript-html-css3-jquery-logo.png)
 
 
 
