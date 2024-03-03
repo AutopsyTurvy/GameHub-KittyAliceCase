@@ -15,6 +15,7 @@ This was initially our introduction into design and CSS, then an exercise in str
 The main purpose of this site was to advertise and sell games at competitive prices, to be able to view them and their specific details and to add them to your cart.
 
 
+
 ## Site purpose:
 
 A game purchasing site with competitive prices and smooth functionality. An exercise in our design and JavaScript skills.
@@ -50,6 +51,9 @@ This page should have form validation, and simulate the process of emailing the 
 -- Other Pages
 
 For the functionality of the site the other pages are not integral- should inclide an "About us" page.
+
+
+---
 
 
 ** Note **
